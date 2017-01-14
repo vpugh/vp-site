@@ -1,0 +1,63 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+<title>UN Inter-Agency Games | Web Design &amp; Development | Victoria Pugh</title>
+{% endblock %}
+
+{% block activemenu %}
+{% set activeMenu = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<section class="jumbotron hero-bg" style="background-image: url(../images/hero-bg/iagny.jpg)">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			{# <h2 class="work-hero--title">Reimaging the United Nations Inter-Agency Games 2014 website</h2> #}
+			<h2 class="work-hero--title">Reimaging an international website for a user-friendly and functional experience</h2>
+			<p class="work-hero--subtitle">The United Nations Inter-Agency Games 2014</p>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			<h2 class="work-title">Background</h2>
+			<p class="work-subtitle">
+				The United Nations (UN) is an intergovernmental organization to promote international co-operation, the organization was established on 24 October 1945 after World War II in order to prevent another such conflict. Its objectives include maintaining international peace and security, promoting human rights, fostering social and economic development, protecting the environment, and providing humanitarian aid in cases of famine, natural disaster, and armed conflict.
+			</p>
+			<h2 class="work-title">The Problem</h2>
+			<p class="work-subtitle">
+				United Nations HQ (NYC) were hosting the 41st Inter-Agency Games, the first time the games were being held in New York City. They wanted to go above and beyond for these games by creating a new look website and matching promotional pieces and signage. The timeline was very short for this project, 2 months to go from research and conception to website launch.
+			</p>
+		</div>
+	</div>
+	<div class="image-full black">
+		<img src="http://toripugh.com/images/gallery/uniag/window-1.jpg" alt="">
+	</div>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			<h2 class="work-title">The Approach</h2>
+			<p class="work-subtitle">
+				The first thing I was shown was what they didn’t want in a site, all the past UN IAG sites. They were simple, text heavy, lacking in images kind of websites. Research for this project was based on similar setups, an international event with teams coming from different parts of the world. So my instinct was to investigate Olympics and World Cups, two of the largest events that fit the criteria and would be the best at showcasing the different aspects of the games to keep in mind.
+			</p>
+			<p class="work-subtitle">
+				Since my role was in designing of the site, not designing the assets I had to create a layout that would accomadate the colors, logo and any other assets the UN designers chose. There was a quick review process with the Coordination Committee and the UN Print Department. After that I created a live prototype so I could easily update everyone on the process of the site and turn it into the final product.
+			</p>
+		</div>
+	</div>
+	<div class="image-full grey">
+		<img src="http://toripugh.com/images/gallery/uniag/IAG-Prototypes.jpg" alt="">
+	</div>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			<h2 class="work-title">The Outcome</h2>
+			<p class="work-subtitle">
+				The new site was successful in modernising the web elements and retaining all the necessary information. The launch of the site was 4 months before the event, to get everyone on the same page for registration and coordination for the event. After the site launch there were over 44,000 pageviews with a bounce rate of 34%, an average of 4 pages per session and an average duration of about 4 mins.
+			</p>
+		</div>
+	</div>
+</main>
+{% endblock %}

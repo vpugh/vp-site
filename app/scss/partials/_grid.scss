@@ -1,0 +1,134 @@
+@import "mixins";
+
+$columns: 12;
+//
+$mobile-small: 320px;
+$mobile-large: 480px;
+//
+$tablet: 768px;
+$tablet-gutter: 20px;
+$tablet-column-width: 38px;
+$tablet-margin: 46px;
+//
+$desktop: 1024px;
+$desktop-gutter: 22px;
+$desktop-column-width: 60px;
+$desktop-margin: 31px;
+//
+$large-desktop: 1440px;
+$large-desktop-gutter: 26px;
+$large-desktop-column-width: 90px;
+$large-desktop-margin: 37px;
+//
+$hd-desktop: 2880px;
+$hd-desktop-gutter: 45px;
+$hd-desktop-column-width: 185px;
+$hd-desktop-margin: 80px;
+ 
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  //overflow: hidden;
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @include mobile-small {
+    width: 90%;
+  }
+  @include mobile-large {
+    width: 90%;
+  }
+  @include tablet {
+    width: $tablet - ($tablet-margin*2);
+  }
+  @include desktop {
+    width: $desktop - ($desktop-margin*2);
+  }
+  @include large-desktop {
+    width: $large-desktop - ($large-desktop-margin*2);
+  }
+  @include hd-desktop {
+    width: $hd-desktop - ($hd-desktop-margin*2);
+  }
+}
+
+[class^='col']:first-child {
+    margin-left: 0;
+  }
+  [class^='col']:last-child {
+    margin-right: 0;
+  }
+
+.col {
+  float: left;
+  min-height: 1px;
+} 
+
+@include mobile-small {
+  @for $i from 1 to ($columns + 1) {
+    .sm-col#{$i} {
+      $width: percentage(($i / $columns)) - 2%;
+      width: $width;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }
+}
+
+@include mobile-large {
+  @for $i from 1 to ($columns + 1) {
+    .sm-col#{$i} {
+      $width: percentage(($i / $columns)) - 2%;
+      width: $width;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }
+}
+
+@include tablet {
+  @for $i from 1 to ($columns + 1) {
+    $grid: ($tablet-column-width * $i) + ($tablet-gutter * ($i - 1));
+    .col#{$i} {
+      width: $grid;
+      margin-left: $tablet-gutter/2;
+      margin-right: $tablet-gutter/2;
+    }
+  }
+}
+
+@include desktop {
+  @for $i from 1 to ($columns + 1) {
+    $grid: ($desktop-column-width * $i) + ($desktop-gutter * ($i - 1));
+    .col#{$i} {
+      width: $grid;
+      margin-left: $desktop-gutter/2;
+      margin-right: $desktop-gutter/2;
+    }
+  }
+}
+
+@include large-desktop {
+  @for $i from 1 to ($columns + 1) {
+    $grid: ($large-desktop-column-width * $i) + ($large-desktop-gutter * ($i - 1));
+    .col#{$i} {
+      width: $grid;
+      margin-left: $large-desktop-gutter/2;
+      margin-right: $large-desktop-gutter/2;
+    }
+  }
+}
+
+@include hd-desktop {
+  @for $i from 1 to ($columns + 1) {
+    $grid: ($hd-desktop-column-width * $i) + ($hd-desktop-gutter * ($i - 1));
+    .col#{$i} {
+      width: $grid;
+      margin-left: $hd-desktop-gutter/2;
+      margin-right: $hd-desktop-gutter/2;
+    }
+  }
+}

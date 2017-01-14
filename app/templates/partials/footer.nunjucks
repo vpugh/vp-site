@@ -1,0 +1,14 @@
+<footer>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<ul class="footer-navigation float--right">
+				<span>Follow On</span>
+				<li><a href="https://twitter.com/teekatwo" target="_blank">Twitter</a></li>
+				<li><a href="https://dribbble.com/teekatwo" target="_blank">Dribbble</a></li>
+				<li><a href="https://www.behance.net/vpugh" target="_blank">Behance</a></li>
+				<li><a href="https://www.instagram.com/toripugh/" target="_blank">Instagram</a></li>
+			</ul>
+			<p class="copyright float--left">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Victoria Pugh. All Rights Reserved.</p>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,133 @@
+@import "variables";
+
+.contact {
+	&-box {
+		background-color: $text-color;
+		font-size: 18px;
+		@include mobile-small {
+			padding: 0;
+		}
+		padding: 30px 0;
+		text-align: center;
+		@include desktop {
+			font-size: 32px;
+			padding: 60px 0;
+			//margin-bottom: 50px;
+		}
+		a {
+			color: #fff;
+			&:hover {
+				color: darken(#fff, 40%);
+			}
+		}
+	}
+	&-blurb-links {
+		@include mobile-small {
+			display: block;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			letter-spacing: 0;
+			text-align: center;
+		}
+		@include mobile-large {
+			display: block;
+		}
+		@include tablet {
+			display: inline-block;
+			letter-spacing: 2px;
+		}
+		&:last-child {
+			color: #ddd;
+		}
+	}
+	&-divider {
+		margin: 0 12px;
+		@include mobile-small {
+			display: none;
+			visibility: hidden;
+		}
+		@include mobile-large {
+			display: none;
+			visibility: hidden;
+		}
+		@include desktop {
+			display: inline-block;
+		}
+		color: rgba(#fff, .4);
+	}
+}
+
+footer {
+	text-align: center;
+	color: #717171;
+	margin: 36px 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@extend .overflow--hidden;
+}
+.footer-navigation {
+	padding: 12px 0 0 0;
+	margin: 0;
+	@include mobile-small {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	@include mobile-large {
+		display: block;
+		width: 100%;
+	}
+	@include max-tablet {
+		float: none;
+	}
+	span {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 1px;
+		@include mobile-small {
+			display: block;
+			margin-bottom: 25px;
+		}
+		&:after {
+			@include tablet {
+				content: "|";
+				margin-left: 6px;
+			}
+		}
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		font-size: 18px;
+		padding: 0 8px;
+		@include mobile-small {
+			font-size: 16px;
+			width: 48%;
+			margin-bottom: 24px;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			border-bottom: 2px solid;
+		}
+	}
+}
+.copyright {
+    font-size: 14px;
+    color: #aaaaaa;
+    display: inline-block;
+    @include mobile-small {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	@include mobile-large {
+		display: block;
+		width: 100%;
+	}
+	@include max-tablet {
+		float: none;
+	}
+}

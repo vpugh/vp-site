@@ -1,0 +1,68 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+<title>Tufts Email Series | Email Design &amp; Development | Victoria Pugh</title>
+{% endblock %}
+
+{% block activemenu %}
+{% set activeMenu = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<section class="jumbotron hero-bg" style="background-image: url(../images/hero-bg/iagny.jpg)">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			{# <h2 class="work-hero--title">Reimaging the United Nations Inter-Agency Games 2014 website</h2> #}
+			<h2 class="work-hero--title">Unified Emails For Better Engagement and Deeper Student Communication</h2>
+			<p class="work-hero--subtitle">Tufts University School of Dental Medicine Email Series</p>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			{# <h2 class="work-title">Background</h2>
+			<p class="work-subtitle">
+				The United Nations (UN) is an intergovernmental organization to promote international co-operation, the organization was established on 24 October 1945 after World War II in order to prevent another such conflict. Its objectives include maintaining international peace and security, promoting human rights, fostering social and economic development, protecting the environment, and providing humanitarian aid in cases of famine, natural disaster, and armed conflict.
+			</p> #}
+			<h2 class="work-title">The Problem</h2>
+			<p class="work-subtitle">
+				A new partner for CDEWorld's partner portals joined. I was tasked with creating emails that would advertise Tufts University School of Dental Medicine upcoming events.
+			</p>
+		</div>
+	</div>
+	<div class="image-full black">
+		<img src="http://www.victoriapugh.net/images/gallery/newsletters/Tufts-Announcement-iMac.png" alt="">
+	</div>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			<h2 class="work-title">The Approach</h2>
+			<p class="work-subtitle">
+				First task was to replicate the design and feel of TUSDM. Wanting to keep a united branding I incorporated the already strong branding from the TUSDM website into the emails. Making it an easy email to develop in a short time, I utilized my existing modular email system. This system I developed allowed for customizing visual elements and extending the TUSDM brand but maintaining a core email structure. It made replication faster and easier to do on short notice.
+			</p>
+		</div>
+	</div>
+	<div class="image-full grey">
+		<img src="http://www.victoriapugh.net/images/gallery/newsletters/Tufts-Announcement-iMac.png" alt="">
+	</div>
+	<div class="container">
+		<div class="col col1-shift-left col10 sm-col10">
+			<h2 class="work-title">The Outcome</h2>
+			<p class="work-subtitle">
+				The new site was successful in modernising the web elements and retaining all the necessary information. The launch of the site was 4 months before the event, to get everyone on the same page for registration and coordination for the event. After the site launch there were over 44,000 pageviews with a bounce rate of 34%, an average of 4 pages per session and an average duration of about 4 mins.
+			</p>
+		</div>
+	</div>
+	<div class="image-full">
+		<a href="http://aegispublications.com/news/cdeworld/2015/events/tufts/02/Tufts-E7.html" target="_blank">
+			<img src="http://www.victoriapugh.net/images/gallery/newsletters/tufts-announcement.jpg" alt="">
+		</a>
+		<a href="http://toripugh.com/images/gallery/tufts/time-is-running-out.jpg" target="_blank">
+			<img src="http://aegispublications.com/news/cdeworld/2015/events/tufts/03/Tufts-E9.html" alt="">
+		<a/>
+	</div>
+</main>
+{% endblock %}

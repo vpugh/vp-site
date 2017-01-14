@@ -1,0 +1,113 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+<title>Victoria Pugh | Design, Development, &amp; Consulting</title>
+{% endblock %}
+
+{% block activemenu %}
+{% set activeMenu = "home" %}
+{% endblock %}
+
+{% block jumbotron %}
+<section class="jumbotron">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			{# <h2 class="jumbotron-title black">We build engaging human-centered digital products, designs &amp; experiences.</h2> #}
+			<img src="images/mycomputer.png">
+			<h2 class="jumbotron-title quincy-black">Designer. Developer. Problem-Solver.</h2>
+			<p class="jumbotron-subtitle col12 sm-col12">
+				Working with businesses to create engaging digital products, and user-centered experiences. Developing thoughtful solutions from research and strategizing to create great brands with satisfied and engaged customers.
+				{# Creating engaging digital products, user-centered experiences, and successful products isn't just about making them visual appealing. Developing thoughtful solutions requires a deep understanding done by customer research, product planning and more. These key factors create great brands with satisfied and engaged customers. #}
+				{# Creating thoughtful solutions to help brands envision #}
+				{# Successful products are more than just good looking. Many factors contribute to creating thoughtful solutions, customer research, product planning and campaigns. With these businesses can create great brands and satisfied customers. #}
+			</p>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<div class="blurb clearfix">
+				<div class="col col10 sm-col10 col1-shift-left">
+					<h3 class="blurb-title">I&rsquo;m a Strategist, Digital Designer &amp; Developer who specializes in Responsive Web Design &amp; Development, and Email Design &amp; Development.</h3>
+					<p class="blurb-subtitle">
+						The key to successful and functional products is design, it is more than making visually pleasing things. <strong>Design is problem-solving</strong>. This means identifying the problem and finding the appropriate solution. With these keys, developing a tailor made solution could be a website redesign; better utilization of email lists; a brand refresh; or whatever your individual needs are.
+					</p>
+					<a class="btn" href="/about">More About Me</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			{# <p class="intro-text">
+				Victoria Pugh Design is a digital studio specializing in design, development, and strategy for websites, emails, branding and digital products.
+				Victoria Pugh Design is a digital studio specializing in design, development, and strategy for websites, emails, branding and digital products.
+				 We are a strategic, creative studio based out of Savannah, Georgia. Our close team of innovative professionals is passionate about partnering with good people and organizations to design exceptional custom solutions. We approach each project and design challenge with process-driven intentionality to inform the identities and experiences we create. We endeavor toward work that drives action, and generates results. Are you looking to have greater impact? We’d love to help. 
+				Our close team of innovative professionals is passionate about partnering with good people and organizations to design exceptional custom solutions. 
+				Approaching each project and design challenge with process-driven intentionality to inform the identities and experiences we create. 
+				We endeavor toward work that drives action, and generates results. Are you looking to have greater impact? 
+				We’d love to help.
+			</p> #}
+			<ul class="portfolio-grid">
+				<li class="portfolio-grid--block-full" >
+					<a href="work/interagency-games.html">
+						<picture>
+							<source srcset="images/iag-thumb@2x.jpg" media="(max-width: 1440px)">
+							<source srcset="images/iag-thumb@2x.jpg 2x, images/iag-thumb@1x.jpg 1x" media="(max-width: 768px)">	
+							<source srcset="images/iag-thumb@1x.jpg" media="(max-width: 480px)">
+							<img src="images/iag-thumb.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">UN - Inter-Agency Games 2014</h3>
+							<p class="portfolio-grid--details-description">Developing an upgraded user-experience, more user-friendly interface</p>
+						</div>
+					</a>
+				</li>
+				<li class="portfolio-grid--block coming-soon">
+					<a href="work/tufts-email.html">
+						<picture>
+							<source srcset="images/iag-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/tufts-email-thumb@2x.jpg 2x, images/tufts-email-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/tufts-email-thumb@2x.jpg 2x, images/tufts-email-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/tufts-email-thumb@1x.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">Tufts School of Dental Medicine - Coming Soon</h3>
+							<p class="portfolio-grid--details-description">Better Integration of website into emails for deeper student contact</p>
+						</div>
+					</a>
+				</li>
+				<li class="portfolio-grid--block coming-soon">
+					<a href="vesper-faber.html">
+						<picture>
+							<source srcset="images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/vesperfaber-thumb@2x.jpg 2x, images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/vesperfaber-thumb@2x.jpg 2x, images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/vesperfaber-thumb@1x.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">Vesper Faber - Coming Soon</h3>
+							<p class="portfolio-grid--details-description">Studio of nighttime freelancers looking for branding</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<div class="contact-box clearfix">
+				<div class="col col10 sm-col10 col1-shift-left">
+					<a class="contact-blurb-links" href="https://tori83.typeform.com/to/b6gima" target="_blank">Want to work together!</a>
+					<span class="contact-divider">|</span>
+					<a class="contact-blurb-links" href="mailto:hello@victoriapugh.net?subject=I Have a Question">Have some questions?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

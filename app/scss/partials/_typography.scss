@@ -1,0 +1,122 @@
+@import "mixins";
+
+@include font-face(WoodfordBourne, "../fonts/woodfordbourne-regular-webfont", normal, normal);
+@include font-face(WoodfordBourne, "../fonts/woodfordbourne-bold-webfont", bold, normal);
+@include font-face(WoodfordBourne, "../fonts/woodfordbourne-italic-webfont", normal, italic);
+@include font-face(QuincyCF-Bold, "../fonts/QuincyCF-Bold", bold, normal);
+@include font-face(QuincyCF-Black, "../fonts/QuincyCF-Black", 700, normal);
+
+.pullquote {
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	@include desktop {
+	    font-size: 40px;
+	    line-height: 1.3;
+	    margin-top: 0;
+	    margin-bottom: 6rem;
+	}
+	&:after,
+	&:before {
+		content: "";
+	    background-color: rgba(0, 0, 0, 0.2);
+	    position: relative;
+	    display: block;
+	    @include mobile-small {
+		    height: 2px;
+		    width: 40%;
+		    margin: 24px auto;
+	    }
+	    @include tablet {
+		    height: 2px;
+		    width: 97px;
+		    margin: 26px auto;
+	    }
+	    @include desktop {
+		    height: 2px;
+		    width: 130px;
+		    //margin: 37px auto;
+		    margin: 48px auto;
+	    }
+	    @include large-desktop {
+		    height: 3px;
+		    width: 183px;
+		    margin: 68px auto 60px auto;
+	    }
+	  }
+}
+
+.list {
+	//float: right;
+	line-height: 1.4;
+	padding-left: 0;
+	margin: 0;
+	&:after {
+		content: '';
+		display: table;
+	}
+	&--columns {
+		float: left;
+		display: block;
+		&-section {
+			font-size: 2rem;
+			@include desktop {
+				font-size: 3rem;
+				margin-top: 0;
+			}	
+		}
+		&.three {
+			width: 100%;
+			@include desktop {
+				width: 30%;
+			}
+			&.m-left {
+				margin-left: 1%;
+			}
+			&.m-right {
+				margin-right: 8%;
+			}
+		}
+		&.six {
+			width: 60%;
+			text-align: right;
+		}
+		&-blocks {
+			padding-bottom: 2rem;
+			@include desktop {
+				margin-bottom: 30px;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&--title {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 12px 0 6px 0;
+	}
+	&--blocks {
+		width: 100%;
+		font-size: 1.3rem;
+		list-style: none;
+		padding-top: 9px;
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+.services-section {
+	overflow: hidden;
+	border-top: 1px solid darken(#F0F0F0, 15%);
+	padding-top: 26px;
+	padding-bottom: 26px;
+	margin-top: 26px;
+	@include desktop {
+		padding-bottom: 80px;
+		padding-top: 80px;
+		margin-top: 60px;
+	}
+}

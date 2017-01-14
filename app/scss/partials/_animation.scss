@@ -1,0 +1,32 @@
+@keyframes slideup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes lineargradient {
+	0% {
+		color: #00C7FF;
+		//transform: translateX(-150%);
+		background-position:0% 50%
+	}
+		
+	50% {
+        color: #8AC641;
+        background-position:100% 50%
+    }
+        
+    100% {
+        color: #FF9600;
+        //transform: translateX(0%);
+        background-position:0% 50%
+    }
+}

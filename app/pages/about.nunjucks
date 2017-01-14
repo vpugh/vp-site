@@ -1,0 +1,101 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+<title>About Me | Victoria Pugh</title>
+{% endblock %}
+
+{% block activemenu %}
+{% set activeMenu = "about" %}
+{% endblock %}
+
+{% block jumbotron %}
+<section class="jumbotron">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<h2 class="jumbotron-title quincy-bold">Your guide to inspire and elevate your business.</h2>
+			<p class="jumbotron-subtitle">
+				Working together with our clients to build comprehensive, thoughtful, and purpose-driven products and experiences.
+			</p>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container clearfix">
+		<div class="col1-shift-left col col10 sm-col12">
+			<h2 class="subhead-text">About Me</h2>
+			<p class="body-text">
+				 I'm Victoria Pugh, a Philadelphia-based Designer/Developer who specializes in websites, emails, developing digital experiences, and branding. I'm a natural born problem solver, finding solutions is my biggest motivator in designing. {# When something isn't working at it's best I need to fix it. #} I'm quite skilled at creating solutions and using whatever skill necessary to reach the goal. {# Dedication and attention to detail are what make great solutions. #}
+			</p>
+			<p class="pullquote quincy-bold">
+				There is no "master key" solutions. Each problem is unique and requires its own solutions. These depend on the client, their goals, and their target audience.  
+			</p>
+			<h2 class="subhead-text">My Process</h2>
+			<p class="body-text">
+				Designing an experience is more than making the product look good. Good design is created from a good solution. This includes research, understanding your brand and audience, coming up with a strategy, then working with the client to determine an appropriate solution.
+			</p>
+			<p class="body-text">
+				From initial ideas to prototypes to finished product, each step is done in close collaboration with the client. With my expertise I create solutions that encompass clients' business goals now and in the future.
+			</p>
+			{# <p class="body-text">
+				I will work with you to create an online presence that engages your customer and puts their needs first. This means understanding your goals and making sure they are inline with your customers needs. Designing an experience is more than making the product look good. The content should be easy to navigate and find what they need. Emails are a good form of customer engagment but they have many rules that need to followed and a lot of testing that needs to be done. 
+			</p> #}
+			<div class="services-section">
+				<div class="list--columns three m-right">
+				<h3 class="list--columns-section">Services</h3>
+			</div>
+			<div class="list--columns three m-left">
+				<div class="list--columns-blocks">
+					<h3 class="list--title">Design</h3>
+					<ul class="list">
+						<li class="list--blocks">Website Design</li>
+						<li class="list--blocks">Digital Product Design</li>
+						<li class="list--blocks">Email Design</li>
+					</ul>
+				</div>
+				<div class="list--columns-blocks">
+					<h3 class="list--title">Development</h3>
+					<ul class="list">
+						<li class="list--blocks">Development Consulting</li>
+						<li class="list--blocks">Responsive Website Development</li>
+						<li class="list--blocks">Email Development</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list--columns three m-left">
+				<div class="list--columns-blocks">
+					<h3 class="list--title">Branding</h3>
+					<ul class="list">
+						<li class="list--blocks">Brand Development</li>
+						<li class="list--blocks">Brand Creation</li>
+						<li class="list--blocks">Collateral</li>
+						<li class="list--blocks">Marketing Materials</li>
+					</ul>
+				</div>
+				<div class="list--columns-blocks">
+					<h3 class="list--title">Marketing Strategy</h3>
+					<ul class="list">
+						<li class="list--blocks">Email Campaigns</li>
+						<li class="list--blocks">Creative Directing</li>
+						<li class="list--blocks">Social Media Marketing</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<div class="contact-box clearfix">
+				<div class="col col10 sm-col12 col1-shift-left">
+					<a class="contact-blurb-links" href="https://tori83.typeform.com/to/b6gima" target="_blank">Want to work together</a>
+					<span class="contact-divider">|</span>
+					<a class="contact-blurb-links" href="mailto:hello@victoriapugh.net?subject=I Have a Question">Have some questions</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}
