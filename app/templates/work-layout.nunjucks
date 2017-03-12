@@ -3,24 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	{% block title %}{% endblock %}
-	<!--build:css(app/work) ../css/styles.min.css-->
+	<title>{% block title %}{% endblock %}</title>
+	{% block css %}
+	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="../css/main.css" title="" type="text/css" media="screen" charset="utf-8">
 	<!--endbuild-->
+	{% endblock %}
 </head>
 <body>
-	{% block activemenu %}{% endblock %}
+	{% block settings %}{% endblock %}
 	{% include "partials/header.nunjucks" %}
-
+	
 	{% block jumbotron %}{% endblock %}
-
+	
 	{% block content %}{% endblock %}
-
+	
+	{% include "partials/contactbox.nunjucks" %}
 	{% include "partials/footer.nunjucks" %}
+	{% block js %}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<!--build:js(app/work) ../js/main.min.js -->
+	<!--build:js js/main.min.js -->
 	<script src="../js/script.js"></script>
 	<script src="../js/main.js"></script>
 	<!-- endbuild -->
+	{% endblock %}
 </body>
 </html>

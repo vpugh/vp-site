@@ -7,8 +7,8 @@ $mobile-large: 480px;
 //
 $tablet: 768px;
 $tablet-gutter: 20px;
-$tablet-column-width: 38px;
-$tablet-margin: 46px;
+$tablet-column-width: 42px;
+$tablet-margin: 22px;
 //
 $desktop: 1024px;
 $desktop-gutter: 22px;
@@ -19,21 +19,15 @@ $large-desktop: 1440px;
 $large-desktop-gutter: 26px;
 $large-desktop-column-width: 90px;
 $large-desktop-margin: 37px;
-//
-$hd-desktop: 2880px;
-$hd-desktop-gutter: 45px;
-$hd-desktop-column-width: 185px;
-$hd-desktop-margin: 80px;
  
 
 .container {
   width: 90%;
   margin: 0 auto;
-  //overflow: hidden;
+  overflow: hidden;
   &:after, &:before {
     content: "";
     display: table;
-    clear: both;
   }
   @include mobile-small {
     width: 90%;
@@ -49,9 +43,6 @@ $hd-desktop-margin: 80px;
   }
   @include large-desktop {
     width: $large-desktop - ($large-desktop-margin*2);
-  }
-  @include hd-desktop {
-    width: $hd-desktop - ($hd-desktop-margin*2);
   }
 }
 
@@ -118,17 +109,6 @@ $hd-desktop-margin: 80px;
       width: $grid;
       margin-left: $large-desktop-gutter/2;
       margin-right: $large-desktop-gutter/2;
-    }
-  }
-}
-
-@include hd-desktop {
-  @for $i from 1 to ($columns + 1) {
-    $grid: ($hd-desktop-column-width * $i) + ($hd-desktop-gutter * ($i - 1));
-    .col#{$i} {
-      width: $grid;
-      margin-left: $hd-desktop-gutter/2;
-      margin-right: $hd-desktop-gutter/2;
     }
   }
 }

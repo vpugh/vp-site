@@ -3,7 +3,7 @@
 .contact {
 	&-box {
 		background-color: $text-color;
-		font-size: 18px;
+		font-size: 16px;
 		@include mobile-small {
 			padding: 0;
 		}
@@ -22,19 +22,16 @@
 		}
 	}
 	&-blurb-links {
+		letter-spacing: 2px;
 		@include mobile-small {
 			display: block;
-			margin-top: 25px;
-			margin-bottom: 25px;
-			letter-spacing: 0;
-			text-align: center;
+			margin: 25px 0;
 		}
 		@include mobile-large {
 			display: block;
 		}
 		@include tablet {
 			display: inline-block;
-			letter-spacing: 2px;
 		}
 		&:last-child {
 			color: #ddd;
@@ -71,14 +68,10 @@ footer {
 	@include mobile-small {
 		display: block;
 		width: 100%;
-		float: none;
 	}
 	@include mobile-large {
 		display: block;
 		width: 100%;
-	}
-	@include max-tablet {
-		float: none;
 	}
 	span {
 		font-weight: bold;
@@ -116,18 +109,15 @@ footer {
 }
 .copyright {
     font-size: 14px;
-    color: #aaaaaa;
+    //color: #aaaaaa;
+    color: #b3b3a5;
     display: inline-block;
     @include mobile-small {
 		display: block;
 		width: 100%;
-		float: none;
 	}
 	@include mobile-large {
 		display: block;
 		width: 100%;
-	}
-	@include max-tablet {
-		float: none;
 	}
 }

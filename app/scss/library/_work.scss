@@ -1,78 +1,5 @@
 @import "partials/variables";
 
-// Work Pages
-
-.work-hero--title {
-    font-family: "QuincyCF-Bold", Georgia, serif;
-    text-align: center;
-    letter-spacing: -.5px;
-    color: #fff;
-    z-index: 1;
-    position: relative;
-    font-size: 3.4rem;
-    line-height: 1.14;
-    &:after {
-	    content: "";
-	    background-color: rgba(255,255,255,0.4);
-	    position: relative;
-	    display: block;
-	    margin: 30px auto 20px auto;
-	    height: 2px;
-	    width: 20%;
-    }
-}
-.work-hero--subtitle {
-    color: rgba(255,255,255,0.9);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    color: #fff;
-    z-index: 1;
-    position: relative;
-    font-weight: 600;
-}
-
-.hero-bg {
-	&.jumbotron {
-    	background-size: cover;
-    	background-repeat: no-repeat;
-    	background-position: 50% 50%;
-    }
-    height: 65vh;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-	&:after {
-		content: "";
-	    //background-color: #FF9600;
-	    //background: linear-gradient(150deg, #FF9600 10%, #d67e00 84%);
-        content: '';
-	    position: absolute;
-	    top: 0;
-	    width: 100%;
-	    height: 100%;
-	    //background: none;
-	    //background-image: -webkit-linear-gradient(rgba(29, 29, 29, 0.40) 100%, rgba(29, 29, 29, 0.40) 100%), -webkit-linear-gradient(rgba(29, 29, 29, 0) 40%, rgba(29, 29, 29, 0.4) 100%);
-	    //background-image: linear-gradient(rgba(29, 29, 29, 0.40) 100%, rgba(29, 29, 29, 0.40) 100%), linear-gradient(rgba(29, 29, 29, 0) 40%, rgba(29, 29, 29, 0.4) 100%);
-	    .green & {
-	    	background-color: $theme-green;
-			background-color: rgba($theme-green,.4);
-			background: linear-gradient(150deg, rgba($theme-green, .4) 0%, darken(rgba($theme-green,0.4), 10%) 84%);
-		}
-		.blue & {
-			background-color: $theme-blue;
-			background-color: rgba($theme-blue, .4);
-		    background: linear-gradient(150deg, rgba($theme-blue, .4) 10%, darken(rgba($theme-blue,.4), 10%) 84%);
-		}
-		.orange & {
-			background-color: $theme-orange;
-			background-color: rgba($theme-orange,.4);
-		    background: linear-gradient(150deg, rgba($theme-orange,.4) 10%, darken(rgba($theme-orange,.4), 8%) 84%);
-		}
-	}
-}
-
 .work {
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
@@ -80,148 +7,83 @@
 	text-align: center;
 	color: $text-color;
 	margin-bottom: 50px;
-	&-title {
+	&--header {
+		.green & {
+			background-color: rgba($theme-green, .75);
+		}
+		.orange & {
+			background-color: rgba($theme-orange, .75);
+		}
+		.blue & {
+			background-color: rgba($theme-blue, .75);
+		}
+		padding: 40px 0;
+		margin-bottom: 50px;
+		margin-top: 30px;
+	}
+	&--title {
+		text-align: center;
+		@include desktop {
+			font-size: 3rem;
+			line-height: 1.2;
+		}
+	}
+	&--summary {
+		text-align: center;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		@include desktop {
+			font-size: 1.8rem;
+		}
+	}
+	&--subtitle {
+		text-align: center;
+		span {
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 10px;
+			&:not(:last-child()) {
+				border-right: 1px solid;
+			}
+		}
+	}
+}
+
+article {
+	@include desktop {
+		font-size: 1.3125rem;
+		line-height: 1.5;
+	}
+}
+.article {
+	&--title {
 		font-weight: 600;
 		letter-spacing: -0.5px;
-		margin: 0;
+		margin-bottom: 0;
 		@include mobile-small {
+			margin-top: 36px;
 			font-size: 20px;
 			line-height: 24px;
 		}
 		@include tablet {
+			margin-top: 58px;
 			font-size: 27px;
 			line-height: 32px;
 		}
 		@include desktop {
+			margin-top: 58px;
 		    font-size: 38px;
 		    line-height: 44px;
 		}
 		@include large-desktop {
+			margin-top: 70px;
 			font-size: 52px;
 			line-height: 62px;
 		}
-		// &:after {
-		// 	content: "";
-		//     position: relative;
-		//     display: block;
-		//     @include mobile-small {
-		// 	    height: 2px;
-		// 	    width: 40%;
-		// 	    margin: 12px;
-		//     }
-		//     @include tablet {
-		// 	    height: 2px;
-		// 	    width: 97px;
-		// 	    margin: 13px ;
-		//     }
-		//     @include desktop {
-		// 	    height: 2px;
-		// 	    width: 130px;
-		// 	    //margin: 37px auto;
-		// 	    margin: 12px auto;
-		//     }
-		//     @include large-desktop {
-		// 	    height: 3px;
-		// 	    width: 183px;
-		// 	    margin: 30px auto;
-		//     }
-		//   }
 	}
-	&-subtitle {
-		//margin: 0;
-		&:last-child {
-			padding-bottom: 0;
-		}
-		@include mobile-small {
-			font-size: 16px;
-			//line-height: 24px;
-			line-height: 1.4;
-		}
-		@include tablet {
-			font-size: 18px;
-			line-height: 24px;
-		}
-		@include desktop {
-			font-size: 22px;
-			line-height: 1.5;
-			padding-bottom: 3rem;
-			margin-bottom: 0;
-		}
-		@include large-desktop {
-			font-size: 34px;
-			line-height: 48px;
-		}
+	&--image {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
 	}
-	&-pullquote {
-		font-family: "QuincyCF-Bold", Georgia, serif;
-		text-align: center;
-		padding: 0 10%;
-		@include desktop {
-		    font-size: 38px;
-		    line-height: 44px;
-		}
-		&:after {
-			content: "";
-		    background-color: rgba(0, 0, 0, 0.2);
-		    position: relative;
-		    display: block;
-		    @include mobile-small {
-			    height: 2px;
-			    width: 40%;
-			    margin: 24px auto;
-		    }
-		    @include tablet {
-			    height: 2px;
-			    width: 97px;
-			    margin: 26px auto;
-		    }
-		    @include desktop {
-			    height: 2px;
-			    width: 130px;
-			    //margin: 37px auto;
-			    margin: 48px auto;
-		    }
-		    @include large-desktop {
-			    height: 3px;
-			    width: 183px;
-			    margin: 68px auto 60px auto;
-		    }
-		  }
-	}
-}
-
-.image-full {
-	margin: 4rem 0;
-	text-align: center;
-	&.black {
-		background-color: #222;
-	}
-	&.grey {
-		background-color: #ddd;
-	}
-	img {
-		padding: 60px 80px;
-	}
-}
-.image-half {
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-	display: inline-block;
-	img {
-		width: 100%;
-		@include tablet {
-			width: 50%;
-			float: left;
-		}
-		&:first-child {
-			@include tablet {
-		    padding-right: 0.5rem;
-		    }
-		}
-		&:last-child {
-			@include tablet {
-		    padding-left: 0.5rem;
-		    }
-		}
-	}
-}
+}	

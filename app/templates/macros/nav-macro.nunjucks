@@ -1,9 +1,0 @@
-{% macro active(activePage='work') %}
-<nav class="header-nav float--right">
-	<ul>
-		<li><a href="/work" class="{%if activePage == 'work' %}active{% endif %}">Work</a></li>
-		<li><a href="/about" class="{%if activePage == 'about' %}active{% endif %}">About</a></li>
-		<li><a href="mailto:hello@victoriapugh.net?subject=I%20am%20Ready%20to%20Start%20a%20Project" target="_blank" class="{%if activePage == 'contact' %}active{% endif %}">Contact</a></li>
-	</ul>
-</nav>
-{% endmacro %}

@@ -1,0 +1,3 @@
+{% macro headerScheme(color='light') %}
+<header class="{%if color == 'dark' %}dark{% endif %}">
+{% endmacro %}

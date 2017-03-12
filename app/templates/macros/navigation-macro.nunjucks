@@ -1,0 +1,10 @@
+{% macro active(activePage='work') %}
+<nav class="header-nav">
+	<ul>
+		<li><a href="/work" class="{%if activePage == 'work' %}active{% endif %}">Work</a></li>
+		<li><a href="/about" class="{%if activePage == 'about' %}active{% endif %}">About</a></li>
+		<li><a class="typeform-share link" href="https://tori83.typeform.com/to/b6gima" data-mode="1" target="_blank">Contact</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script></li>
+	</ul>
+</nav>
+{% endmacro %}

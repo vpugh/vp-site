@@ -1,90 +1,66 @@
 @import "variables";
 
 .blurb {
-	background-color: #fff;
+	//background-color: #fff;
 	//background-color: #F0F0F0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
+	//text-align: center;
 	color: $text-color;
-	@include mobile-small {
-		padding-top: 40px;
-	}
-	@include tablet {
-		padding-top: 40px;
-		margin-bottom: 20px;
-	}
+	margin-bottom: 50px;
 	@include desktop {
-		padding: 64px 0 28px 0;
-		margin-bottom: 50px;
+		padding: 64px 0;
+	}
+	&-content {
+		//text-align: center;
+		@include desktop {
+			padding: 60px 0;
+			width: 85%;
+		}
 	}
 	&-title {
-		font-family: "QuincyCF-Bold", Georgia, serif;
 		letter-spacing: -0.5px;
 		margin: 0;
+		line-height: 1.3;
+		margin-bottom: 24px;
 		@include mobile-small {
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 1.4rem;
+		}
+		@include mobile-large {
+			font-size: 1.5rem;
 		}
 		@include tablet {
 			font-size: 27px;
-			line-height: 32px;
 		}
 		@include desktop {
 		    font-size: 38px;
-		    line-height: 44px;
-		    line-height: 1.2;
 		}
 		@include large-desktop {
 			font-size: 52px;
 			line-height: 62px;
 		}
-		&:after {
-			content: "";
-		    background-color: rgba(0, 0, 0, 0.2);
-		    position: relative;
-		    display: block;
-		    @include mobile-small {
-			    height: 2px;
-			    width: 40%;
-			    margin: 24px auto;
-		    }
-		    @include tablet {
-			    height: 2px;
-			    width: 97px;
-			    margin: 26px auto;
-		    }
-		    @include desktop {
-			    height: 2px;
-			    width: 130px;
-			    //margin: 37px auto;
-			    margin: 48px auto;
-		    }
-		    @include large-desktop {
-			    height: 3px;
-			    width: 183px;
-			    margin: 68px auto 60px auto;
-		    }
-		  }
+
 	}
 	&-subtitle {
 		margin-top: 0;
+		margin-bottom: 0;
 		@include mobile-small {
-			font-size: 16px;
+			font-size: 1.1rem;
 			line-height: 24px;
 		}
+		@include mobile-large {
+			font-size: 1.3rem;
+		}
 		@include tablet {
-			//padding-top: 32px;
 			font-size: 18px;
 			line-height: 24px;
 		}
 		@include desktop {
-			//padding-top: 40px;
 			font-size: 24px;
 			line-height: 36px;
+			line-height: 1.5;
 		}
 		@include large-desktop {
-			//padding-top: 56px;
 			font-size: 34px;
 			line-height: 48px;
 		}

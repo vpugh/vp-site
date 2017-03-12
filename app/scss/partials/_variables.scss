@@ -1,4 +1,7 @@
-$theme-blue: #00C7FF;
+$theme-blue  : #00C7FF;
 $theme-orange: #FF9600;
-$theme-green: #8AC641;
-$text-color: #4A4A4A;
+$theme-green : #8AC641;
+$text-color  : #4A4A4A;
+$gradient-green-blue  : linear-gradient(-60deg, $theme-green 0%, $theme-blue 100%);
+$gradient-blue-green  : linear-gradient(-60deg, $theme-blue 0%, $theme-green 100%);
+$gradient-green-orange: linear-gradient(-60deg, $theme-orange 0%, $theme-green 100%);
