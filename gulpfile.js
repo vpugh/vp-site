@@ -7,9 +7,12 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
+var del = require('del');
 var sourcemaps = require('gulp-sourcemaps');
 var nunjucksRender = require('gulp-nunjucks-render');
 var uncss = require('gulp-uncss');
+var imagemin = require('gulp-imagemin');
+var runSequence = require('run-sequence');
 
 // Start browserSync server
 gulp.task('browserSync', function() {
@@ -71,13 +74,19 @@ gulp.task('watch', ['nunjucks', 'browserSync', 'sass'], function (){
 })
 
 gulp.task('useref', function() {
-	return gulp.src('app/*.html')
+	return gulp.src(['app/*.html', 'app/**/*.html'])
 	.pipe(useref())
 	// minifies only js
 	.pipe(gulpIf('*.js', uglify()))
 	// minifies only css
 	.pipe(gulpIf('*.css', cssnano()))
 	.pipe(gulp.dest('dist'))
+});
+
+gulp.task('images', function(){
+	return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
+		.pipe(imagemin())
+		.pipe(gulp.dest('dist/images'))
 });
 
 gulp.task('fonts', function() {
@@ -91,4 +100,29 @@ gulp.task('ucss', function() {
 		html: ['app/index.html']
 	}))
 	.pipe(gulp.dest('app/out'));
+});
+
+// Cleaning 
+gulp.task('clean', function() {
+  return del.sync('dist').then(function(cb) {
+    return cache.clearAll(cb);
+  });
+});
+
+// Clear cache
+gulp.task('clear', function (done) {
+  return cache.clearAll(done);
+});
+
+// Cleaning Dist Folder
+gulp.task('clean:dist', function() {
+	return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+});
+
+gulp.task('build', function(callback) {
+	runSequence(
+		'clean:dist', 
+		['nunjucks','sass','useref', 'fonts'],
+		callback
+	)
 });
