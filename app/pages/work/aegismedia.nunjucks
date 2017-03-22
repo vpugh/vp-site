@@ -1,0 +1,45 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+AEGIS Media | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+		<div class="container">
+			<div class="col col12 sm-col12">
+				<h2 class="work--title">AEGIS Media</h2>
+				<p class="work--summary">Redesigning the website of a recently acquired company and incorporating their new branding.</p>
+				<h3 class="work--subtitle">
+					<span>Web Design</span>
+					<span>Web Development</span>
+					<span>UX/UI</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">The Brief</h2>
+				<p>
+					Two companies, Scientific Graffiti and Blue Motion Studios, had been acquired and were combined into a new company, AEGIS Media. They are in the scientific and medical field specializing in animation and illustration. They wanted a more sleek professional look to their website, so the design relied heavily on images and a single color, their company blue.
+				</p>
+			</article>
+			<img class="article--image" src="http://victoriapugh.net/images/gallery/aegis-media/macbook-homepage.png" alt="">
+			<img class="article--image" src="http://victoriapugh.net/images/gallery/aegis-media/aegis-media-full-homepage.jpg" alt="">
+			<img src="http://victoriapugh.net/images/gallery/aegis-media/Aegismedia-pages.jpg" alt="" class="article--image">
+			<img src="http://victoriapugh.net/images/gallery/aegis-media/Aegismedia-mobile.jpg" alt="" class="article--image">
+		</div>
+</main>
+{% endblock %}

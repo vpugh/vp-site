@@ -1,0 +1,46 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+Interstice Theme | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+		<div class="container">
+			<div class="col col12 sm-col12">
+				<h2 class="work--title">Interstice</h2>
+				<p class="work--summary">A theme that has a clean design and is good for blogging.</p>
+				<h3 class="work--subtitle">
+					<span>Web Design</span>
+					<span>Web Development</span>
+					<span>Theme</span>
+				</h3>
+				<a class="btn btn-white margin--auto" href="http://interstice-theme.tumblr.com/" target="_blank" >Live Site</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Theme Development</h2>
+				<p>
+					The theme is minimalist with a large sidebar image, simplified navigation and emphasizing the blog posts with a heavy usage of whitespace. I had seen a layout similar to this and wanted to create a theme that would have a fully customizable image "sidebar" and a clean text area. The image "sidebar" becomes a fixed height header on mobile.
+				</p>
+			</article>
+			<img class="article--image" src="../images/gallery/interstice/window-1.jpg" alt="">
+			<img class="article--image" src="../images/gallery/interstice/window-2.jpg" alt="">
+			<img src="../images/gallery/interstice/window-3.jpg" alt="" class="article--image">
+			<img src="../images/gallery/interstice/iphone-grp-1.png" alt="" class="article--image">
+		</div>
+</main>
+{% endblock %}

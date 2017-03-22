@@ -9,23 +9,31 @@
 	margin-bottom: 50px;
 	&--header {
 		.green & {
-			background-color: rgba($theme-green, .75);
+			//background-color: rgba($theme-green, .75);
+			background-color: $theme-green;
 		}
 		.orange & {
-			background-color: rgba($theme-orange, .75);
+			//background-color: rgba($theme-orange, .75);
+			background-color: $theme-orange;
 		}
 		.blue & {
-			background-color: rgba($theme-blue, .75);
+			// background-color: rgba($theme-blue, .75);
+			background-color: $theme-blue;
 		}
-		padding: 40px 0;
-		margin-bottom: 50px;
-		margin-top: 30px;
+		//padding: 40px 0;
+		color: #fff;
+		padding: 150px 0 70px 0;
+		//margin-bottom: 50px;
+		//margin-top: 30px;
+		position: relative;
+		top: 0;
 	}
 	&--title {
 		text-align: center;
+		font-size: 2rem;
+		line-height: 1.2;
 		@include desktop {
 			font-size: 3rem;
-			line-height: 1.2;
 		}
 	}
 	&--summary {
@@ -34,11 +42,13 @@
 		margin-right: auto;
 		margin-left: auto;
 		@include desktop {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 		}
 	}
 	&--subtitle {
 		text-align: center;
+		color: rgba(#fff, .85);
+		letter-spacing: .75px;
 		span {
 			display: inline-block;
 			padding-left: 10px;
@@ -51,9 +61,25 @@
 }
 
 article {
+	font-size: 1.5rem;
+	line-height: 1.5;
 	@include desktop {
 		font-size: 1.3125rem;
-		line-height: 1.5;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+	a {
+		.green & {
+			color: $theme-green;
+		}
+		.blue & {
+			color: $theme-blue;
+		}
+		.orange & {
+			color: $theme-orange;
+		}
 	}
 }
 .article {
@@ -72,15 +98,24 @@ article {
 			line-height: 32px;
 		}
 		@include desktop {
-			margin-top: 58px;
-		    font-size: 38px;
-		    line-height: 44px;
+			//margin-top: 58px;
+		    //font-size: 38px;
+		    //line-height: 44px;
+		    margin-top: 0;
+		    font-size: 2rem;
+		    line-height: 1.1;
+		    margin-bottom: 1.2rem;
 		}
 		@include large-desktop {
 			margin-top: 70px;
 			font-size: 52px;
 			line-height: 62px;
 		}
+	}
+	&--caption {
+		font-size: 1.1rem;
+		margin-top: 1rem;
+		//font-style: italic;
 	}
 	&--image {
 		margin-top: 1.5rem;

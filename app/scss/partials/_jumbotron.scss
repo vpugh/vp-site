@@ -18,21 +18,18 @@
 	}
 	.green & {
 		background-color: $theme-green;
-		background: linear-gradient(150deg, $theme-green 0%, darken($theme-green, 10%) 84%);
+		//background: linear-gradient(150deg, $theme-green 0%, darken($theme-green, 10%) 84%);
 		background: $gradient-green-blue;
 	}
 	.blue & {
 		background-color: $theme-blue;
-	    background: linear-gradient(150deg, $theme-blue 10%, darken($theme-blue, 10%) 84%);
+	    //background: linear-gradient(150deg, $theme-blue 10%, darken($theme-blue, 10%) 84%);
 	    background: $gradient-blue-green;
 	}
 	.orange & {
 		background-color: $theme-orange;
-	    background: linear-gradient(150deg, $theme-orange 10%, darken($theme-orange, 8%) 84%);
+	    //background: linear-gradient(150deg, $theme-orange 10%, darken($theme-orange, 8%) 84%);
 	    background: $gradient-green-orange;
-	}
-	.gradients & {
-	    background: linear-gradient(150deg, #00C7FF 6%, #8AC641 54%, #FF9600 94%);
 	}
 	@include mobile-small {
 		padding-top: 100px;
@@ -45,12 +42,12 @@
 	}
 	@include tablet {
 		//padding-top: 126px;
-		padding-top: 40vh;
+		padding-top: 20vh;
 	}
 	@include desktop {
 		//padding-top: 52px;
 		//padding-top: 140px;
-		padding-top: 30vh;
+		padding-top: 25vh;
 		padding-bottom: 100px;
 	}
 	&.short {
@@ -67,8 +64,9 @@
 	  animation-name: slideup;
 	  line-height: 1.2;
 	  @include mobile-small {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 	    animation: none;
+	    text-align: center;
 	  }
 	  @include mobile-large {
 	  	font-size: 1.6rem;
@@ -81,19 +79,11 @@
 	    font-size: 3em;
 	    width: 100%;
 	  }
-	  @include large-desktop {
-	    font-size: 59px;
-	    line-height: 60px;
-	  }
-	  @include hd-desktop {
-	    font-size: 116px;
-	    line-height: 120px;
-	  }
 	}
 	&-subtitle {
 		color: #fff;
 		text-align: left;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 		animation-duration: 1.2s;
 	    animation-name: slideup;
 	    animation-delay: 800ms;
@@ -114,14 +104,12 @@
 		@include tablet {
 			font-size: 1.25rem;
 			width: 86%;
+			padding-bottom: 80px;
 		}
 		@include desktop {
 			font-size: 1.5em;
 			width: 90%;
-		}
-		@include large-desktop {
-			font-size: 32px;
-			line-height: 48px;
+			padding-bottom: 20px;
 		}
 	}
 }

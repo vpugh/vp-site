@@ -1,18 +1,11 @@
 @import "variables";
 
 .blurb {
-	//background-color: #fff;
-	//background-color: #F0F0F0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	//text-align: center;
 	color: $text-color;
 	margin-bottom: 50px;
-	@include desktop {
-		padding: 64px 0;
-	}
 	&-content {
-		//text-align: center;
 		@include desktop {
 			padding: 60px 0;
 			width: 85%;
@@ -35,11 +28,6 @@
 		@include desktop {
 		    font-size: 38px;
 		}
-		@include large-desktop {
-			font-size: 52px;
-			line-height: 62px;
-		}
-
 	}
 	&-subtitle {
 		margin-top: 0;
@@ -59,10 +47,6 @@
 			font-size: 24px;
 			line-height: 36px;
 			line-height: 1.5;
-		}
-		@include large-desktop {
-			font-size: 34px;
-			line-height: 48px;
 		}
 	}
 }

@@ -1,0 +1,47 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+Newsletters | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<h2 class="work--title">Various Email Newsletters</h2>
+			<p class="work--summary">Series of emails, some are related and some are one-offs.</p>
+			<h3 class="work--subtitle">
+				<span>Email Design</span>
+				<span>Email Development</span>
+			</h3>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">The Brief</h2>
+				<p>
+					A collection of various event emails that were produced.
+				</p>
+				<h2 class="article--title">Execution</h2>
+				<p>
+					I utilized my existing modular email system, this system I developed allowed for customizing visual elements and extending the Tufts brand but maintaining a core email structure. It made replication faster and easier to do on short notice.
+				</p>
+				<img class="article--image" src="../images/gallery/newsletters/straumann-dic.jpg" alt="">
+				<img class="article--image" src="../images/gallery/newsletters/straumann-dic-followup.jpg" alt="">
+				<img class="article--image" src="../images/gallery/newsletters/vizstara-methods.jpg" alt="">
+				<img class="article--image" src="../images/gallery/newsletters/vizstara-monthly.jpg" alt="">
+			</article>
+		</div>
+</main>
+{% endblock %}

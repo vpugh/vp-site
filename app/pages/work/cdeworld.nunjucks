@@ -1,0 +1,98 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+CDEWorld | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+		<div class="container">
+			<div class="col col12 sm-col12">
+				<h2 class="work--title">CDEWorld</h2>
+				<p class="work--summary">A redesign to improve the user-experience and update and streamline the user-interface.</p>
+				<h3 class="work--subtitle">
+					<span>Web Design</span>
+					<span>Web Development</span>
+					<span>UX/UI</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Background</h2>
+				<p>
+					CDEWorld, one of the fastest growing online continuing dental education sites and a global leader in dental e-knowledge transfer. Their mission: to be the site of choice for oral healthcare professionals worldwide to source and complete their continuing professional development needs.
+				</p>
+				<h2 class="article--title">The Brief</h2>
+				<p>
+					They were looking to improve performance of their website, investigate improvement that could be made for the user experience and getting the site to better convey their company values.
+				</p>
+			</article>
+			<img class="article--image" src="http://toripugh.com/images/gallery/cdew/Macbook-Article-1.png" alt="">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Approach</h2>
+				<p>
+					An audit and refractor/recode of their website's code would help to improve the performance of the site and take advantage of responsive design the site is currently lacking consistently. A better integration of their values would be deeply intwined with solutions to make a more user-friendly approach.
+				</p>
+				<div class="article--image">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/sitemap-2.jpg" alt="">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/sitemap-3.jpg" alt="">
+				</div>
+				<h2 class="article--title">Research</h2>
+				<p>
+					Needed to find out what changes needed to be made — did the layout of the site need to change, where there any section additions or removals needed, etc. I used heatmaps to track customer movement on the website, their engagement the pages, interface interactions, and their movement down the page. I used the heatmaps for 4 month to get a good median of data.
+				</p>
+				<p>
+					<strong>Biggest take aways:</strong> The site was getting more mobile device (tablet and phone) traffic than expected and it wasn't build to be responsive. Some aspects of the interface was confusing some people, i.e. people were clicking on unclickable objects. Most of the list pages didn't end, infinite scrolling, you could see the drop in people scrolling. The screen resolutions that were recorded coming to the site were larger than what was expected, the design was for a max smaller resolution.
+				</p>
+				<div class="article--image">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/Homepage-v1.jpg" alt="">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/Homepage-v2.jpg" alt="">
+					<p class="article--caption">Various layouts and wireframes, looking for a good balance for the homepage.</p>
+				</div>
+				<h2 class="article--title">Wireframes &amp; Prototypes</h2>
+				<p>
+					Building with the data retrieved in the research phase I set to work making numerous layouts. I got inspiration and ideas from content heavy websites, similar to newspaper or news site. I needed a look capable of holding a lot of text but not exactly similar to <a class="link" href="http://www.nytimes.com/" target="_blank">New York Times</a> or <a class="link" href="https://www.washingtonpost.com/" target="_blank">Washington Post</a>, which is just a wall of text.
+				</p>
+				<p>
+					<strong>Prototypes:</strong><br>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/Grid-%20Redesign-2/Grid%20-%20Test2.html" target="_blank">Version 1</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/Grid-%20Redesign-3/Grid%20-%20Test3.html" target="_blank">Version 2</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/Grid-%20Redesign/Grid%20-%20Test.html" target="_blank">Version 3</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/Homepage.html" target="_blank">Version 4</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/hp2/" target="_blank">Version 5</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/hp3/" target="_blank">Version 6</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v1/hp4/" target="_blank">Version 7</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v2/Prototype-Version1.html" target="_blank">Version 8</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v2/Prototype-Version3.html" target="_blank">Version 9</a>
+					<a class="" href="http://toripugh.com/prototype/cdew-test-v2/Prototype-Version5-B.html" target="_blank">Version 10</a>
+				</p>
+				<p>
+					<strong>Finding the concentration points</strong><br>
+					I originally started on what I thought was the most important page, the homepage. After the heatmaps I realized that people weren't really spending as much time there and the real experience was on <em>secondary pages</em> of articles, webinars and events. From research these pages are the main objective of visitors to the site, I wanted to make sure the experience was smooth and enjoyable so areas of improvment were making the text legible, simplifing the visuals of the page, building it responsively and creating faster page loads.
+				</p>
+				<div class="article--image">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/article-org.jpg" alt="">
+					<img class="" src="http://toripugh.com/images/gallery/cdew/article-new.jpg" alt="">
+					<p class="article--caption"><strong>Top:</strong> Original layout and design. <strong>Bottom:</strong> Updated layout and design.</p>
+				</div>
+				<p>
+					<strong>Decisions behind the layout</strong><br>
+					Since the purpose of the secondary pages is read and scan over the information then take the quiz for certification. With this in mind I made a protoype that emphasized whatever the main content was, an article, ebook, event, or webinar. On each page a sidebar was included containing basic information, price, credits, etc and educational material such as learning objectives.
+				</p>
+			</article>
+		</div>
+</main>
+{% endblock %}

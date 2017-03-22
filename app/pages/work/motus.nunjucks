@@ -1,0 +1,46 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+Motus Theme | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+		<div class="container">
+			<div class="col col12 sm-col12">
+				<h2 class="work--title">Motus</h2>
+				<p class="work--summary">A theme that has a clean design and is good for blogging.</p>
+				<h3 class="work--subtitle">
+					<span>Web Design</span>
+					<span>Web Development</span>
+					<span>Theme</span>
+				</h3>
+				<a class="btn btn-white margin--auto" href="http://motus-theme.tumblr.com/" target="_blank" >Live Site</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Theme Development</h2>
+				<p>
+					The theme is minimalist with a hover activated sidebar menu. This is an extremely minimalist design, the text has been given the most space on the page and some of the whitespace was filled in with the sidebar image. It also serves to emphasis the location of the menu, the hamburger menu.
+				</p>
+			</article>
+			<img class="article--image" src="../images/gallery/motus/window-1.jpg" alt="">
+			<img class="article--image" src="../images/gallery/motus/window-2.jpg" alt="">
+			<img src="../images/gallery/motus/window-3.jpg" alt="" class="article--image">
+			<img src="../images/gallery/motus/window-4.jpg" alt="" class="article--image">
+		</div>
+</main>
+{% endblock %}

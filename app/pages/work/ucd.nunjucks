@@ -1,0 +1,76 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+Updates in Clinical Dentistry | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+		<div class="container">
+			<div class="col col12 sm-col12">
+				<h2 class="work--title">Updates in Clinical Dentistry</h2>
+				<p class="work--summary">Creation of an email system for ease of deployment and maximum recipient engagement.</p>
+				<h3 class="work--subtitle">
+					<span>Email Design</span>
+					<span>Email Development</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Background</h2>
+				<p>
+					CDEWorld, one of the fastest growing online continuing dental education sites and a global leader in dental e-knowledge transfer. Their mission: to be the site of choice for oral healthcare professionals worldwide to source and complete their continuing professional development needs.
+				</p>
+				<h2 class="article--title">The Brief</h2>
+				<p>
+					The creation of an email system that could accomodate an event targeting multiple cities while also maintaining brand consistency; easily reproducable for other cities; and is quick to create and deploy.
+				</p>
+			</article>
+			<img class="article--image" src="../images/gallery/updates/National.png" alt="">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Approach</h2>
+				<p>
+					I needed to get a overarching layout of all possible emails that could be sent. There were 3 different groups - National/Regional, Registrants, and CE. The National/Regional group would be the marketing driven emails. These are meant to entice and be informative, potentially play up the location and speakers. The Registrants group is general emails sent to people who have already registered. These emails are simple as reminders of upcoming dates or alerts on a change of venue. These would be more simple in format due to their need to pass crucial information versus marketing. The final group is CE reminder. After the event the attendees would get email reminders to take their free courses and get their credits. These emails would also be more crucial information versus marketing, as such they would be more text heavy.
+				</p>
+				<div class="article--image">
+					<img class="" src="../images/gallery/updates/national-regional.jpg" alt="">
+					<p class="article--caption">The Regional group of emails — maintaining consistency and making each email different enough to not appear to be the same email.</p>
+				</div>
+				<h2 class="article--title">Research</h2>
+				<p>
+					I started my research by subscribing to as many conference email lists as I could to see what other people were doing. I also found a great resource in <a href="http://reallygoodemails.com" target="_blank">reallygoodemails.com</a> and took note of some of the features of the emails such as subheaders, titles, buttons, and images. With the combined knowledge of how other conferences handle their emails and general good and eye-catching design. I started piecing together ideas on the general layouts.
+				</p>
+				<h2 class="article--title">Wireframes &amp; Prototypes</h2>
+				<p>
+					Using the information and patterns I obtained from my research I set off to start building numerous layouts. An emphasis was placed on the location of the events for the Regional group of emails, so the main image for these emails were of utmost importance. Then with more data available, speakers, dates, times, and hotel addresses I could better estimate the space being taken up and have more accurate prototypes.
+				</p>
+				<p>
+					<strong>Prototypes (Finals):</strong><br>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/03/CS-E2.html" target="_blank">Florida - E2</a>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/05/NC-E3.html" target="_blank">North Carolina - E3</a>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/03/E4.html" target="_blank">New Jersey - E4</a>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/06/IN-E5.html" target="_blank">Indianapolis - E5</a>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/06/OH-E7.html" target="_blank">Ohio - E7</a>
+					<a class="prototype--link" href="http://aegispublications.com/news/cdeworld/2016/events/updates/08/TN-E8.html" target="_blank">Tennesse - E8</a>
+				</p>
+				<div class="article--image">
+					<img class="" src="../images/gallery/updates/registrant-sample.jpg" alt="">
+					<img class="" src="../images/gallery/updates/ce-sample.jpg" alt="">
+				</div>
+			</article>
+		</div>
+</main>
+{% endblock %}

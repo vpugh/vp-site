@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block title %}
-About — Victoria Pugh
+About | Design &amp; Development Consulting | Victoria Pugh
 {% endblock %}
 
 {% block settings %}
@@ -27,27 +27,27 @@ About — Victoria Pugh
 
 {% block content %}
 <main>
-	<div class="container clearfix">
-		<div class="col col11 sm-col12 padding-tb-10 text">
-			{# <h1 class="black title">Your guide to inspire and elevate your business.</h1> #}
-			<h3 class="subtitle">
-				{# Hello I'm Tori! I&rsquo;m a Front-End Designer/Developer and Strategist.  #}
-				I'm a designer/developer/strategist with a passion to help people and a love of good design. The digital world moves by leaps and bounds every year (or so it seems). I know how digital and physical projects will affect your company and will help you create a plan to reach your goals.
+	<div class="about container clearfix">
+		<div class="col col12 sm-col12 text">
+			<h3 class="subtitle black">
+				Hello, I'm Tori! A designer/developer with a desire and passion to help people and create good designs that people can use. The digital world moves by leaps and bounds every year (or so it seems). I know how digital projects will affect your company and will work with you to help create a plan to reach your goals.
 			</h3>
-			<p>
-				I've seen a good amount of poor websites and emails and knew that I could be of some help to make them better. While many people would just care about giving you something pretty, I want to go deeper. I want to educate my clients and go beyond the visuals to understand how the products created will help their businesses thrive and keep their customers happy.
-			</p>
-			{# <p>
-				<strong>Design is problem-solving.</strong> Identifying the problem and finding the appropriate solution. It’s much more complex than just making things visually pleasing. My philosophy is <em>critical listening</em> and <em>asking the right questions</em>. These are the keys to developing great ideas/solutions. These tailor made solutions could be a website redesign; better utilization of email lists; a brand refresh; or whatever your needs are.
-			</p> #}
-			<h3 class="margin-btm-10">What I do</h3>
-			<p>
-				Digital Design, Digital Development, Email Development, Email Management, Brand Development, Art Direction, Marketing Materials/Collateral
-			</p>
-			<h3 class="margin-btm-10">Worked with</h3>
-			<p>
-				PHH Mortgage, The American School of Physicians, Lenox Inc, Saint Joseph's University, AKA By Design, United Nations, AEGIS Communications, Dental Learning Systems.
-			</p>
+			<div class="body-text">
+				<p>
+					I've seen many poor websites and emails and knew that I could be of some help to make them better. While many people would just care about giving you something pretty, I want to go deeper. I want to educate my clients and go beyond the visuals to understand how the products created will help their businesses thrive and keep their customers happy.
+				</p>
+				<p>
+					I design and build websites that are speedy to load, easy to navigate, and responsive from the start with a design that is user-friendly and accessible for many people. The world of emails is different and sometimes confusing, I am knowledgable about best practices, email etiquette and the legal ramifications of not following offical guidelines for emails. I can also assist with the nuanced art of email campaigns, a lot of research and trial and error.
+				</p>
+				<h3 class="margin-btm-10">What I do</h3>
+				<p>
+					Web Development, Web Design, Email Development, Email Design, Email Campaign Management, Creative Direction
+				</p>
+				<h3 class="margin-btm-10">Worked with</h3>
+				<p>
+					PHH Mortgage, The American School of Physicians, Lenox Inc, Saint Joseph's University, AKA By Design, United Nations, AEGIS Communications, Dental Learning Systems.
+				</p>
+			</div>
 		</div>
 	</div>
 </main>

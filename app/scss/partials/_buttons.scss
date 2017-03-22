@@ -26,7 +26,8 @@
 		content: "";
 		display: block;
 		opacity: .4;
-		height: 2px;
+		height: 3px;
+		margin-top: 2px;
 	    -webkit-transition: -webkit-transform 300ms ease;
 	    transition: -webkit-transform 300ms ease;
 	    transition: transform 300ms ease;
@@ -55,6 +56,9 @@
 .btn {
 	&.center {
 		margin: 0 auto;
+	}
+	&.btn-white {
+		color: #fff;
 	}
 	.green & {
 		background-color: $theme-green;
@@ -87,12 +91,6 @@
 		margin-top: 49px;
 		margin-bottom: 49px;
 		padding: 16px 72px 14px 72px;
-	}
-	@include large-desktop {
-		font-size: 21px;
-		margin-top: 56px;
-		margin-bottom: 56px;
-		padding: 24px 101px 22px 101px;
 	}
 	&:hover {
 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

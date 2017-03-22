@@ -1,12 +1,9 @@
 header {
-	//background-color: rgba(#fff, .10);
 	position: absolute;
 	width: 100%;
 	overflow: hidden;
-	//z-index: 8;
 	&.dark {
 		color: #444;
-		//position: relative;
 		a {
 			color: #444;
 		}
@@ -72,7 +69,6 @@ header {
 		line-height: 55px;
 		font-size: 19px;
 		letter-spacing: 1px;
-		//text-transform: uppercase;
 	}
 	a {
 		color: #fff;
@@ -120,17 +116,11 @@ header {
 		float: none;
 	}
 	@include tablet {
-		//height: 13px;
 		width: 180px;
 		position: relative;
 	}
 	@include desktop {
-		//height: 13px;
 	    width: 180px;
-	}
-	@include large-desktop {
-		height: 18px;
-		width: 252px;
 	}
 	&:hover {
 		opacity: .5;

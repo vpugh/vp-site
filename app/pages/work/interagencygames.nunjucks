@@ -1,21 +1,20 @@
 {% extends "work-layout.nunjucks" %}
 
 {% block title %}
-UN Inter-Agency Games | Web Development &amp; Design — Victoria Pugh
+UN Inter-Agency Games | Design &amp; Development Consulting | Victoria Pugh
 {% endblock %}
 
 {% block settings %}
-{% set colorScheme = "dark" %}
+{% set colorScheme = "light" %}
 {% set activePage = "work" %}
 {% endblock %}
 
-{% block content %}
-<main>
-	<div class="work--header">
+{% block jumbotron %}
+<div class="work--header">
 		<div class="container">
 			<div class="col col12 sm-col12">
 				<h2 class="work--title">United Nations Inter-Agency Games 2014</h2>
-				<p class="work--summary">I designed and developed a website to enhance the user-experience and make it easier and more comfortable to navigate.</p>
+				<p class="work--summary">The design and development of a website to enhance user-experience with an emphasis on making it easier and more comfortable to navigate.</p>
 				<h3 class="work--subtitle">
 					<span>Web Design</span>
 					<span>Web Development</span>
@@ -24,24 +23,35 @@ UN Inter-Agency Games | Web Development &amp; Design — Victoria Pugh
 			</div>
 		</div>
 	</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	
 	<div class="container">
 		<div class="col col12 sm-col12">
-			<article class="col9 sm-col12 margin--auto">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">Background</h2>
+				<p>
+					The United Nations (UN) is an intergovernmental organization to promote international co-operation after World War II in order to prevent another such conflict. Its objectives include maintaining international peace and security, promoting human rights, fostering social and economic development, protecting the environment, and providing humanitarian aid in cases of famine, natural disaster, and armed conflict.
+				</p>
 				<h2 class="article--title">The Brief</h2>
 				<p>
-					<em>The United Nations (UN) is an intergovernmental organization to promote international co-operation after World War II in order to prevent another such conflict. Its objectives include maintaining international peace and security, promoting human rights, fostering social and economic development, protecting the environment, and providing humanitarian aid in cases of famine, natural disaster, and armed conflict.</em>
+					United Nations HQ (NYC) were hosting the 41st Inter-Agency Games, the first time the games were being held in New York City. They wanted to go above and beyond for these games by creating a new look website and matching promotional pieces and signage. The timeline was very short for this project. I had 2 months to go from research/conception to website launch.
 				</p>
-				<p>
-					United Nations HQ (NYC) were hosting the 41st Inter-Agency Games, the first time the games were being held in New York City. They wanted to go above and beyond for these games by creating a new look website and matching promotional pieces and signage. The timeline was very short for this project. I had 2 months to go from research &amp; conception to website launch.
-				</p>
-					<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/macbook-homepage-2.png" alt="">
+			</article>
+			<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/macbook-homepage-2.png" alt="">
+			<article class="body-text margin--auto">
 				<h2 class="article--title">Research</h2>
 				<p>
 					The first information I was given was what they didn’t want in a site, all the past Inter-Agency Games websites. They were simple sites that were text heavy and lacking in images. They weren't the most visually appealing sites. I based my research for this project on similar setups, an international game event. My instinct was to investigate the Olympics and World Cups, two of the largest events that fit the criteria and would be the best at showcasing the different aspects of the games to keep in mind.
 				</p>
-					<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-France.jpg" alt="">
-					<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-Spain.jpg" alt="">
-				<h2 class="article--title">Wireframes & Prototypes</h2>
+				<div class="article--image">
+					<img class="" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-France.jpg" alt="">
+					<img class="" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-Spain.jpg" alt="">
+					<p class="article--caption">The sites for the two prior events.</p>
+				</div>
+				<h2 class="article--title">Wireframes &amp; Prototypes</h2>
 				<p>
 					My role was the design and development of the site, not designing the assets. I wanted to create a layout that would accommodate the colors, logo and any other assets the United Nations designers came up with. There was a quick review process with the Coordination Committee and the United Nations Print Department. After the review I created a live prototype so I could easily update it and everyone on it's progress. This made it easier to get feedback on the final product.
 				</p>

@@ -11,23 +11,19 @@ $tablet-column-width: 42px;
 $tablet-margin: 22px;
 //
 $desktop: 1024px;
-$desktop-gutter: 22px;
+$desktop-gutter: 20px;
 $desktop-column-width: 60px;
 $desktop-margin: 31px;
-//
-$large-desktop: 1440px;
-$large-desktop-gutter: 26px;
-$large-desktop-column-width: 90px;
-$large-desktop-margin: 37px;
- 
 
 .container {
   width: 90%;
   margin: 0 auto;
-  overflow: hidden;
+  //overflow: hidden;
+
   &:after, &:before {
     content: "";
     display: table;
+    clear: both;
   }
   @include mobile-small {
     width: 90%;
@@ -41,17 +37,14 @@ $large-desktop-margin: 37px;
   @include desktop {
     width: $desktop - ($desktop-margin*2);
   }
-  @include large-desktop {
-    width: $large-desktop - ($large-desktop-margin*2);
-  }
 }
 
-[class^='col']:first-child {
-    margin-left: 0;
-  }
-  [class^='col']:last-child {
-    margin-right: 0;
-  }
+// [class^='col']:first-child {
+//     margin-left: 0;
+//   }
+//   [class^='col']:last-child {
+//     margin-right: 0;
+//   }
 
 .col {
   float: left;
@@ -84,7 +77,7 @@ $large-desktop-margin: 37px;
   @for $i from 1 to ($columns + 1) {
     $grid: ($tablet-column-width * $i) + ($tablet-gutter * ($i - 1));
     .col#{$i} {
-      width: $grid;
+      width: $grid - 20px;
       margin-left: $tablet-gutter/2;
       margin-right: $tablet-gutter/2;
     }
@@ -98,17 +91,6 @@ $large-desktop-margin: 37px;
       width: $grid;
       margin-left: $desktop-gutter/2;
       margin-right: $desktop-gutter/2;
-    }
-  }
-}
-
-@include large-desktop {
-  @for $i from 1 to ($columns + 1) {
-    $grid: ($large-desktop-column-width * $i) + ($large-desktop-gutter * ($i - 1));
-    .col#{$i} {
-      width: $grid;
-      margin-left: $large-desktop-gutter/2;
-      margin-right: $large-desktop-gutter/2;
     }
   }
 }

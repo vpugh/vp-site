@@ -1,32 +1,35 @@
 {% extends "work-layout.nunjucks" %}
 
 {% block title %}
-Tufts Email Series | Email Development &amp; Design — Victoria Pugh
+Tufts Email Series | Design &amp; Development Consulting | Victoria Pugh
 {% endblock %}
 
 {% block settings %}
-{% set colorScheme = "dark" %}
+{% set colorScheme = "light" %}
 {% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<h2 class="work--title">Tufts University School Of Dental Medicine</h2>
+			<p class="work--summary">An email series that was designed and developed to coexist and compliment their existing branding, and be produced quickly and with minimal code changes.</p>
+			<h3 class="work--subtitle">
+				<span>Email Design</span>
+				<span>Email Development</span>
+				<span>UX/UI</span>
+			</h3>
+		</div>
+	</div>
+</div>
 {% endblock %}
 
 {% block content %}
 <main>
-	<div class="work--header">
-		<div class="container">
-			<div class="col col12 sm-col12">
-				<h2 class="work--title">Tufts University School Of Dental Medicine Email Series</h2>
-				<p class="work--summary">An email series that was designed and developed to coexist and compliment their existing branding, and be produced quickly and with minimal code changes.</p>
-				<h3 class="work--subtitle">
-					<span>Email Design</span>
-					<span>Email Development</span>
-					<span>UX/UI</span>
-				</h3>
-			</div>
-		</div>
-	</div>
 	<div class="container">
 		<div class="col col12 sm-col12">
-			<article class="col9 sm-col12 margin--auto">
+			<article class="body-text margin--auto">
 				<h2 class="article--title">The Brief</h2>
 				<p>
 					A new partner come on board for partner portals and I was tasked with creating emails that would advertise Tufts University School of Dental Medicine upcoming events. The main task would be to replicate the design and feel of Tufts while making it an easy email to develop in a short time.

@@ -12,13 +12,23 @@ Design &amp; Development Consulting | Victoria Pugh
 <section class="jumbotron">
 	<div class="container">
 		<div class="col col12 sm-col12">
-			<h2 class="jumbotron-title black">Working with companies to create user centric digital products and engaging experiences.</h2>
+			{# <h2 class="jumbotron-title black">Working with companies to create user centric digital products and engaging experiences.</h2> #}
+			<h2 class="jumbotron-title black">I partner with clients needing solutions for improving their digital products or seeking guidance in digital affairs.</h2>
 			{# <p class="jumbotron-subtitle col12 sm-col12">
 				I know that successful and functional products go beyond being visually pleasing. Factors to consider to develop thoughtful solutions are customer research, product planning and more. These create great brands with satisfied and engaged customers.
 			</p> #}
-			<p class="jumbotron-subtitle col12 sm-col12">
+			{# <p class="jumbotron-subtitle col12 sm-col12">
 				I know that developing successful products is more than just looks. You need to research, strategize, and use critical-thinking to imagine thoughtful solutions. These solutions are crucial to creating successful products, great brands and satisfied customers.
+			</p> #}
+			<p class="jumbotron-subtitle col12 sm-col12">
+				I know that developing successful products is more than just looks, it takes thoughtful solutions. These solutions will create engaging experiences and develop user-first products, which are crucial to creating successful products, great brands and satisfied customers.
 			</p>
+			{# <p class="jumbotron-subtitle col12 sm-col12">
+				Creating great websites &mdash; fast, efficient, responsive, user-friendly, and intuitive.
+			</p>
+			<p class="jumbotron-subtitle col12 sm-col12">
+				Devising emails and campaigns &mdash; knowledgable about email etiquette and best practices and how to incorporate these into your designs and campaigns.
+			</p> #}
 		</div>
 	</div>
 </section>
@@ -31,7 +41,7 @@ Design &amp; Development Consulting | Victoria Pugh
 			<div class="blurb clearfix">
 				<div class="col col12 sm-col12">
 					<div class="blurb-content">
-						<h3 class="blurb-title black">I'm a strategist, designer and developer specializing in Web Design &amp; Development, Emails, Branding and User-Experience.</h3>
+						<h3 class="blurb-title black">I specialize in the Development &amp; Design of Websites &amp; Emails; and Email Campaigns.</h3>
 					<p class="blurb-subtitle">
 						I work with clients to understand their ideas and create tailor-made solutions to reach their goals. These solutions vary depending on the situation and the goal to achieved. They can be a website redesign; better utilization of email lists; a brand refresh; realignment of company goals; or whatever your individual needs are.
 					</p>
@@ -47,7 +57,7 @@ Design &amp; Development Consulting | Victoria Pugh
 		<div class="col col12 sm-col12">
 			<ul class="portfolio-grid">
 			<li class="portfolio-grid--block-full" >
-					<a href="work/interagency-games.html">
+					<a href="work/interagencygames">
 						<picture>
 							<source srcset="images/iag-thumb@2x.jpg" media="(max-width: 1440px)">
 							<source srcset="images/iag-thumb@2x.jpg 2x, images/iag-thumb@1x.jpg 1x" media="(max-width: 768px)">	
@@ -61,7 +71,35 @@ Design &amp; Development Consulting | Victoria Pugh
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
-					<a href="work/aegismedia.html">
+					<a href="work/ucd">
+						<picture>
+							<source srcset="images/ucd-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/ucd-thumb@2x.jpg 2x, images/ucd-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/ucd-thumb@2x.jpg 2x, images/ucd-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/ucd-thumb@1x.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
+							<p class="portfolio-grid--details-description">Updates in Clinical Dentistry</p>
+						</div>
+					</a>
+				</li>
+				<li class="portfolio-grid--block">
+					<a href="work/cdeworld">
+						<picture>
+							<source srcset="images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/cdeworld-thumb@2x.jpg 2x, images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/cdeworld-thumb@2x.jpg 2x, images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/cdeworld-thumb@1x.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
+							<p class="portfolio-grid--details-description">CDEWorld</p>
+						</div>
+					</a>
+				</li>
+				<li class="portfolio-grid--block">
+					<a href="work/aegismedia">
 						<picture>
 							<source srcset="images/am-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/am-thumb@2x.jpg 2x, images/am-thumb@1x.jpg 1x" media="(max-width: 768px)">
@@ -75,7 +113,7 @@ Design &amp; Development Consulting | Victoria Pugh
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
-					<a href="work/interstice.html">
+					<a href="work/interstice">
 						<picture>
 							<source srcset="images/interstice-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/interstice-thumb@2x.jpg 2x, images/interstice-thumb@1x.jpg 1x" media="(max-width: 768px)">
@@ -89,35 +127,21 @@ Design &amp; Development Consulting | Victoria Pugh
 					</a>
 				</li>
 				<li class="portfolio-grid--block" >
-					<a href="work/dreamday.html">
+					<a href="work/cmsemails">
 						<picture>
-							<source srcset="images/dreamday-thumb@2x.jpg" media="(max-width: 1440px)">
-							<source srcset="images/dreamday-thumb@2x.jpg 2x, images/dreamday-thumb@1x.jpg 1x" media="(max-width: 768px)">	
-							<source srcset="images/dreamday-thumb@1x.jpg" media="(max-width: 480px)">
-							<img src="images/dreamday-thumb@1x.jpg" alt="">
-						</picture>
-						<div>
-							<h3 class="portfolio-grid--details-company">Branding</h3>
-							<p class="portfolio-grid--details-description">Dreamday Visionaries</p>
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-grid--block" >
-					<a href="work/interagency-games.html">
-						<picture>
-							<source srcset="images/newsletters-thumb@2x.jpg" media="(max-width: 1440px)">
-							<source srcset="images/newsletters-thumb@2x.jpg 2x, images/newsletters-thumb@1x.jpg 1x" media="(max-width: 768px)">	
-							<source srcset="images/newsletters-thumb@1x.jpg" media="(max-width: 480px)">
-							<img src="images/newsletters-thumb@1x.jpg" alt="">
+							<source srcset="images/cms-thumb@2x.jpg" media="(max-width: 1440px)">
+							<source srcset="images/cms-thumb@2x.jpg 2x, images/cms-thumb@1x.jpg 1x" media="(max-width: 768px)">	
+							<source srcset="images/cms-thumb@1x.jpg" media="(max-width: 480px)">
+							<img src="images/cms-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
 							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">Newsletter Email System</p>
+							<p class="portfolio-grid--details-description">Clinical Mastery Series</p>
 						</div>
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
-					<a>
+					<a href="work/tuftsemail">
 						<picture>
 							<source srcset="images/iag-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/tufts-email-thumb@2x.jpg 2x, images/tufts-email-thumb@1x.jpg 1x" media="(max-width: 768px)">
@@ -131,16 +155,30 @@ Design &amp; Development Consulting | Victoria Pugh
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
-					<a href="work/vesparfaber.html">
+					<a href="work/motus">
 						<picture>
-							<source srcset="images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 480px)">
-							<source srcset="images/vesperfaber-thumb@2x.jpg 2x, images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 768px)">
-							<source srcset="images/vesperfaber-thumb@2x.jpg 2x, images/vesperfaber-thumb@1x.jpg 1x" media="(max-width: 1024px)">
-							<img src="images/vesperfaber-thumb@1x.jpg" alt="">
+							<source srcset="images/motus-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/motus-thumb@2x.jpg 2x, images/motus-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/motus-thumb@2x.jpg 2x, images/motus-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/motus-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
-							<h3 class="portfolio-grid--details-company">Branding</h3>
-							<p class="portfolio-grid--details-description">Vesper Faber</p>
+							<h3 class="portfolio-grid--details-company">Web Design, Web Development</h3>
+							<p class="portfolio-grid--details-description">Motus</p>
+						</div>
+					</a>
+				</li>
+				<li class="portfolio-grid--block">
+					<a href="work/newsletters">
+						<picture>
+							<source srcset="images/newsletters-thumb@1x.jpg 1x" media="(max-width: 480px)">
+							<source srcset="images/newsletters-thumb@2x.jpg 2x, images/newsletters-thumb@1x.jpg 1x" media="(max-width: 768px)">
+							<source srcset="images/newsletters-thumb@2x.jpg 2x, images/newsletters-thumb@1x.jpg 1x" media="(max-width: 1024px)">
+							<img src="images/newsletters-thumb@1x.jpg" alt="">
+						</picture>
+						<div>
+							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
+							<p class="portfolio-grid--details-description">Newsletters</p>
 						</div>
 					</a>
 				</li>

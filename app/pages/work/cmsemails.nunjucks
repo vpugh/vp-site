@@ -1,0 +1,45 @@
+{% extends "work-layout.nunjucks" %}
+
+{% block title %}
+Clinical Mastery Series | Design &amp; Development Consulting | Victoria Pugh
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "light" %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block jumbotron %}
+<div class="work--header">
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<h2 class="work--title">Clinical Mastery Series</h2>
+			<p class="work--summary">An email series that was designed and developed to coexist and compliment their existing branding, and be produced quickly and with minimal code changes.</p>
+			<h3 class="work--subtitle">
+				<span>Email Design</span>
+				<span>Email Development</span>
+			</h3>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container">
+		<div class="col col12 sm-col12">
+			<article class="body-text margin--auto">
+				<h2 class="article--title">The Brief</h2>
+				<p>
+					I was tasked with creating a series of emails for an event organized by the client. 
+				</p>
+				<h2 class="article--title">Execution</h2>
+				<p>
+					These were emails that were going to have different content depending on the stage of build up to the event. So, I created a simple system that made it easy to get the base design done and all that was left was putting in the updated courses and course information.
+				</p>
+				<img class="article--image" src="../images/gallery/newsletters/cms-generic.jpg" alt="">
+				<a href="http://www.victoriapugh.net/images/gallery/newsletters/tufts-last-chance.jpg" target="_blank"><img class="article--image" src="../images/gallery/newsletters/cms-meet-educator.jpg" alt=""></a>
+			</article>
+		</div>
+</main>
+{% endblock %}
