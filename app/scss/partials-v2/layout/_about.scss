@@ -1,0 +1,129 @@
+.about {
+    .text-container {
+        @include breakpoint(desktop, min-width){
+            width: 76%;
+        }
+    }
+    .title {
+        font-size: 2rem;
+        padding: 20vh 0 10vh 0;
+    }
+    .subtitle {
+        // font-size: 1.8rem;
+        margin-top: 1.4em;
+        margin-bottom: .25em;
+        @include breakpoint(tablet,max-width) {
+            font-size: 1.4rem;
+        }
+        @include breakpoint(desktop,min-width) {
+            margin-bottom: .25em;
+        }
+    }
+    .text-small {
+        font-size: .9em;
+        margin-top: 0;
+        @include breakpoint(tablet,max-width){
+            font-size:1.2em;
+        }
+    }
+    p {
+        color: color(text,light);
+    }
+    .contact p {
+        color: color(text,white);
+    }
+    
+}
+.body-text {
+    // float: left;
+    width: 65%;
+    @include breakpoint(tablet, max-width) {
+        width: 100%;
+    }
+}
+
+.about-header {
+    padding-top: 10vh;
+    padding-bottom: 30px;
+    &--text {
+        h1 {
+            font-size: 1.8rem;
+            line-height: 1.3;
+            margin-bottom: 1em;
+            @include breakpoint(desktop, min-width) {
+                font-size: 2.2rem;
+            }
+        }
+        h2 {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            @include breakpoint(desktop, min-width) {
+                font-size: 1.3rem;
+                
+            }
+        }
+    }
+    &--text-container {
+        padding: 0;
+        @include breakpoint(desktop, min-width) {
+            padding: 0 62px 0 80px;
+        }
+        
+    }
+    &--image {
+        flex: 0 0 100%;
+        @include breakpoint(desktop, min-width) {
+            flex: 1;
+        }
+        overflow: hidden;
+        max-height: 500px;
+    }
+}
+.margin-btm-10 + p {
+    margin-top: 0;
+}
+
+.fullwidth-image img {
+    display: block;
+}
+
+.colorized {
+
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @include breakpoint(tablet,max-width){
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    // All colorized styles
+    div::before {
+        content: '';
+        position: absolute;
+        mix-blend-mode: multiply;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+
+        // Specific color styles
+        .blue & {
+            background-color: color(blue,base);
+        }
+
+        .orange & {
+            background-color: color(orange, base);
+        }
+        
+        .green & {
+            background-color: color(green, base);
+        }
+    }
+}

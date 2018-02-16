@@ -1,0 +1,175 @@
+@import "partials-v2/variables/colorMap";
+
+.text-link {
+	font-weight: bold;
+	display: inline-block;
+	margin: 1.5em 0;
+	color: inherit;
+	text-transform: uppercase;
+	.green & {
+		color: color(green,base);
+	}
+	.blue & {
+		color: color(blue,base);
+	}
+	.orange & {
+		color: color(orange,base);
+	}
+	&.large {
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+	&.side-padding {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	@include breakpoint(smobile, max-width) {
+		display: inline-block;
+	    padding-top: 16px;
+	    padding-bottom: 16px;
+		width: 40vw;
+		background-color: #4A4A4A;
+		color: #fff;
+		text-align: center;
+	}
+	&:after {
+		content: "";
+		display: block;
+		opacity: .4;
+		height: 3px;
+		margin-top: 2px;
+	    -webkit-transition: -webkit-transform 300ms ease;
+	    transition: -webkit-transform 300ms ease;
+	    transition: transform 300ms ease;
+	    transition: transform 300ms ease,-webkit-transform 300ms ease;
+	    background-color: #222;
+        -webkit-transform-origin: 0;
+	    transform-origin: 0;
+	    @include breakpoint(smobile, max-width) {
+	    	height: 0;
+	    }
+	}
+	&:hover:after {
+		-webkit-transition: -webkit-transform 200ms ease;
+	    transition: -webkit-transform 200ms ease;
+	    transition: transform 200ms ease;
+	    transition: transform 200ms ease,-webkit-transform 200ms ease;
+	    -webkit-transform: scaleX(0);
+	    transform: scaleX(0);
+	}
+	@include breakpoint(desktop, min-width) {
+		font-size: 21px;
+		font-size: 1.25rem;
+	}
+}
+
+.btn {
+	font-weight: bold;
+	color: color(text,white);
+	letter-spacing: 2px;
+	line-height: 24px;
+	display: table;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border-radius: 3px;
+
+	@include breakpoint(lmobile, max-width) {
+		font-size: 15px;
+		margin-top: 24px;
+		margin-bottom: 12px;
+		padding: 15px 55px 13px 55px;
+		width: 100%;
+		text-align: center;
+	}
+	@include breakpoint(lmobile, min-width) {
+		font-size: 15px;
+		margin-top: 24px;
+		margin-bottom: 12px;
+		padding: 15px 55px 13px 55px;
+		text-align: center;
+	}
+	@include breakpoint(tablet, min-width) {
+		margin-top: 23px;
+		padding: 15px 55px 13px 55px;
+	}
+	@include breakpoint(desktop, min-width) {
+		margin-top: 49px;
+		margin-bottom: 49px;
+		padding: 16px 72px 14px 72px;
+	}
+
+	&.center {
+		margin: 0 auto;
+	}
+	&.btn-white {
+		color: color(text,white);
+	}
+	.green & {
+		background-color: $green;
+	}
+	.blue & {
+		background-color: $blue;
+	}
+	.orange & {
+		background-color: $orange;
+	}
+
+	&.primary {
+		.green & {
+			background-color: color(green,base);
+		}
+		.blue & {
+			background-color: color(blue,base);
+		}
+		.orange & {
+			background-color: color(orange,base);
+		}
+	}
+
+	&.secondary {
+		.green & {
+			background-color: color(green,light);
+			color: color(green, dark);
+		}
+		.blue & {
+			background-color: desaturate($blue, 10%);
+			// color: color(blue, dark);
+			// color: adjust-hue($blue,22%);
+			color: color(text, base);
+			border: 1px solid color(text,light);
+			background-color: transparent;
+		}
+		.orange & {
+			background-color: color(orange,light);
+			color: color(orange, dark);
+		}
+	}
+	
+	&.inline {
+		display: inline-block;
+	}
+
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+
+	&.left-margin {
+		@include breakpoint(lmobile, max-width){
+			margin: 0;
+		}
+		margin-left: 1em;
+	}
+}
+.link.inline {
+	.green & {
+		color: color(green,base);
+	}
+	.blue & {
+		color: color(blue,base);
+	}
+	.orange & {
+		color: color(orange,base);
+	}
+}

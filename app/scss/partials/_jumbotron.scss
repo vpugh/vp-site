@@ -19,17 +19,17 @@
 	.green & {
 		background-color: $theme-green;
 		//background: linear-gradient(150deg, $theme-green 0%, darken($theme-green, 10%) 84%);
-		background: $gradient-green-blue;
+		background: $gradient-green-2;
 	}
 	.blue & {
 		background-color: $theme-blue;
 	    //background: linear-gradient(150deg, $theme-blue 10%, darken($theme-blue, 10%) 84%);
-	    background: $gradient-blue-green;
+	    background: $gradient-blue-2;
 	}
 	.orange & {
 		background-color: $theme-orange;
 	    //background: linear-gradient(150deg, $theme-orange 10%, darken($theme-orange, 8%) 84%);
-	    background: $gradient-green-orange;
+	    background: $gradient-orange-2;
 	}
 	@include mobile-small {
 		padding-top: 100px;
@@ -76,8 +76,9 @@
 	    width: 86%;
 	  }
 	  @include desktop {
-	    font-size: 3em;
-	    width: 100%;
+	    font-size: 3.5em;
+		line-height: 1.2;
+	    width: 88%;
 	  }
 	}
 	&-subtitle {
@@ -108,7 +109,7 @@
 		}
 		@include desktop {
 			font-size: 1.5em;
-			width: 90%;
+			width: 86%;
 			padding-bottom: 20px;
 		}
 	}

@@ -1,0 +1,53 @@
+.grid {
+    display: grid;
+}
+.grid--6col {
+    grid-template: 1fr / repeat(6, 1fr);
+    @include breakpoint(lmobile, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+.grid--5col {
+    grid-template: 1fr / repeat(5, 1fr);
+    @include breakpoint(tablet, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+.grid--4col {
+    grid-template: 1fr / repeat(4, 1fr);
+    @include breakpoint(tablet, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+.grid--3col {
+    grid-template: 1fr / repeat(3, 1fr);
+    @include breakpoint(tablet, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+.grid--2col {
+    grid-template: 1fr / repeat(2,1fr);
+    @include breakpoint(tablet, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+.grid--1col {
+    grid-template: 1fr / 1fr;
+}
+.grid-gap-15 {
+    grid-gap: 15px;
+}
+.grid--fullwidth {
+    grid-column: 1 / -1;
+}
+
+.grid--block-30 {
+    padding-right:30px;
+    @include breakpoint(tablet,max-width) {
+        padding-right:0;
+    }
+}
+
+.grid--2-4 {
+    grid-column: 4/-1;
+}

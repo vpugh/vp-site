@@ -6,7 +6,7 @@
 		list-style: none;
 		display: inline-block;
 		float: left;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 	&--block {
 		width: 100%;
@@ -16,7 +16,7 @@
 		@include desktop {
 			width: 49%;
 		}
-		&:nth-child(2n) {
+		&:nth-child(odd) {
 			margin-right: 18px;
 		}
 	}
@@ -34,16 +34,13 @@
 	}
 	&--details-company {
 	    font-size: .8rem;
-	    @include desktop {
-		    font-size: 1rem;
-	    }
-	    margin-bottom: 0;
+	    margin: 0;
 	    color: lighten(#4a4a4a, 20%);
 	    text-transform: uppercase;
 		letter-spacing: 1px;
 		font-weight: bold;
-		display: none;
-		visibility: none;
+		// display: none;
+		// visibility: none;
 	}
 	&--details-description {
 		font-size: 1.2rem;
@@ -51,8 +48,9 @@
 		line-height: 1.15em;
 		letter-spacing: 0;
 		@include desktop {
-			margin-top: 1rem;
+			margin-top: 2rem;
 		    font-size: 1.5rem;
+			margin-bottom: .5em;
 		}
 	    color: #4a4a4a;
         text-transform: capitalize;

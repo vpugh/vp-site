@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block title %}
-About | Design &amp; Development Consulting | Victoria Pugh
+About | Email and Website Design, Development, &amp; Consulting - VP Designs
 {% endblock %}
 
 {% block settings %}
@@ -9,46 +9,168 @@ About | Design &amp; Development Consulting | Victoria Pugh
 {% set activePage = "about" %}
 {% endblock %}
 
-{# {% block jumbotron %}
-<section class="jumbotron short solid">
-	<div class="container">
-		<div class="col col12 sm-col12">
-			<h2 class="jumbotron-title black">I'm a freelance Front-End Designer/Developer and Strategist.</h2>
-			<p class="jumbotron-subtitle col12 sm-col12">
-				I know that successful and functional products go beyond being visually pleasing. Factors to consider to develop thoughtful solutions are customer research, product planning and more. These create great brands with satisfied and engaged customers.
+{% block content %}
+<main>
+	<div class="grid container about-header grid--1col">
+		<div class="text-container">
+			<h2 class="atiza--bold">Driven by curiosity to solve problems, a desire to understand clients, and to make better products.</h2>
+			<p>We are curious to see what you want to make. From websites to email campaigns and anything digital in-between. We want to help make those dreams come true. If your feeling adventurous and want to do something new, we are always up for an adventure and challenge. Our mission is to make things better and make them with users in mind. These are things that work and get people to keep coming back.</p>
+			
+			<p>We are partners & teachers. Together we work to create a solution that best suits your need. Teaching you what you need to do to take the plan and succeed. We can make something great for you but will also give you the strategy needed to continue and grow.</p>
+		</div>
+	</div>
+	<div class="container colorized ">
+		<div class="fullwidth-image">
+			<img src="http://victoriapugh.net/images/gallery/test-image-bg.jpg" alt="">
+		</div>
+	</div>
+	<div class="grid container about-header grid--2col">
+		<div class="text-container grid--fullwidth">
+			<h2 class="atiza--bold">Who's Behind the Studio?</h2>
+			<img src="http://victoriapugh.net/images/gallery/test-image-bg.jpg" alt="">
+			<p>This studio is run by <a class="plain-link" href="http://toripugh.com" target="_blank">Victoria (Tori) Pugh</a>, a designer, developer, and strategist.</p>
+
+			<p>She has years experience in the digital spectrum. Working from emails to website development to product creation. She does it all and keeps in mind the small details that make a big difference. Having endless patience and being a great teacher, she enjoys working with people who might need more explanation and walk-through to learn more about the fine details. Ideal clients are driven and ready to work towards their goal, they don't need to have a plan just be ready to make one.</p>
+			
+			<p>Some quick points:</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Worked for Medical and Pharma Companies</h3>
+				<p class="text-small">
+					These fields are highly regulated and require great attention to detail. Your not making things to your clients standard but also their legal department. Finding that line between legal and fun is always tough, but rewarding.
+				</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Really &lt;3 &lt;3 (Loves) Emails</h3>
+				<p class="text-small">
+					There's a term for people who really love emails, working with, designing, or developing. She is a <a class="plain-link" href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=%23emailgeeks" target="_blank">#emailgeek</a>. The desire to the craft creates great emails that work where your subscribers and customers are. Factors much more than how an email looks, there are more metrics than that.
+				</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Cares About the Whole Project</h3>
+				<p class="text-small">
+					She wants to know how the whole project connects so she is making the most updated decisions. All the pieces are important when making a strategic decision. Striving to always get you what you want requires a good level of information about the future and current decisions.
+				</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Great Problem-Solver</h3>
+				<p class="text-small">
+					She loves to hear your problems and work through them with you to create solutions. Some can be easy, others it can take longer. Finding a solution is one of her strong points.
+				</p>
+		</div>
+		<div class="text-container grid--fullwidth">
+			<h2 class="atiza--bold">Studio Values</h2>
+			<p>Creating solutions that are led by a understanding of your specific circumstance and executed with strategic intent and thorough research. These solutions are effective and all encompassing, more than just visual.</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Honesty & Transparency</h3>
+			<p class="text-small">
+				The most integral part of the process is the relationship built with our clients. We work very hard to remain transparent and honest with ourselves and our clients. To cultivate this sense of trust. We are working together towards the same goals.
 			</p>
-			<p class="jumbotron-subtitle col12 sm-col12">
-				I know that developing successful products is more than just looks. You need to research, strategize, and use critical-thinking to imagine thoughtful solutions. These solutions are crucial to creating successful products, great brands and satisfied customers.
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Design With Feeling</h3>
+			<p class="text-small">
+				When we work on a project with a client, we know that the ultimate goal is to satisfy not just the client but also the end-user. Every step in the process is done with them in mind and always puts them first.
+			</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Individually Dedicated</h3>
+			<p class="text-small">
+				We work with each client based on their own merit and give each all of our attention and care. Keeping this in mind we keep our, and your, expectations realistic. We work to keep the lines of communication open with you. We are dedicated to your success and it reflects in our work.
+			</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Eternally Passionate</h3>
+			<p class="text-small">
+				We are doing what we love, solving problems and making solutions. We take great care to make everything to the best of out abilities. We look forward to working with like minded and driven individuals. Those filled with excitement and passion.
+			</p>
+		</div>
+		<div class="text-container grid--fullwidth">
+			<h2 class="atiza--bold">Studio Services</h2>
+			<p>These services build enduring, engaging, and intuitive products, making this a reliable option for consultation, design, or development for your digital products.</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Design Services</h3>
+			<p class="text-small">
+				Design is more than making something look pretty, it's delving deep into what makes your business and/or product tick and how to communicate that to your customer base. 
+			</p>
+			<p class="text-small">
+				This starts, always, with research into you and your product. From there we use the research and work with you to decide what direction you want your branding/company to go. This includes getting into the specifics of your who is your target audience/users and how to best reach them. 
+			</p>
+			<p class="text-small">
+				Then it's a case of providing the best experience for your customers and a product that will grow your company. Not only making a beautiful experience but an easy, intuitive, rememberable one. Something that takes all the information we've obtained into account and puts the user first and foremost in the design.
+			</p>
+			<p class="text-small">
+				<em>Consultation | Creative Direction | Branding | Product Design | User Experience (UX) | User Interface (UI) | Interaction Design | Design Strategy</em>
+			</p>
+		</div>
+		<div class="grid--block-30">
+			<h3 class="subtitle atiza--bold">Development Services</h3>
+			<p class="text-small">
+				For web development, the amount of tools to get any job done are near endless in this day-and-age. If required we don't mind working in your current setup or something specific you have in mind. Otherwise we strive to always use whatever tools are best suited for you and your business. We can let your update your site or if you want us to do that we can. There are many options and we love experimenting, are flexible and open to learning something new.
+			</p>
+			<p class="text-small">
+				Email development is difficult with all the legal rules and regulations for sending to and maintaining peoples information. We are well versed in what you need to know, what you should and should not do, and how to best reach your customers and get them to engage with your emails.
+			</p>
+			<p class="text-small">
+				<em>Web Development | Content Management Systems (CMS) | Email Development | Email Campaigning | Wordpress</em>
 			</p>
 		</div>
 	</div>
-</section>
-{% endblock %} #}
-
-{% block content %}
-<main>
-	<div class="about container clearfix">
-		<div class="col col12 sm-col12 text">
-			<h3 class="subtitle black">
-				Hello, I'm Tori! A designer/developer with a desire and passion to help people and create good designs that people can use. The digital world moves by leaps and bounds every year (or so it seems). I know how digital projects will affect your company and will work with you to help create a plan to reach your goals.
-			</h3>
+	{# <div class="about container clearfix">
+			<h2 class="title atiza">I'm Tori, a designer &amp; developer with a desire and passion to help people and create designs that people can use. The digital world moves by leaps and bounds every year (or so it seems). I know how digital projects will affect your company and will work with you to help create a plan to reach your goals.</h2>
+			
+			<div class="sidebar-text">
+			<h3 class="margin-btm-10 atiza--bold">Full Services</h3>
+				<p>UI/UX</p>
+				<p>Web Design &amp; Development</p>
+				<p>Mobile Design</p>
+				<p>Email Design &amp; Development</p>
+				<p>Ecommerce</p>
+				<p>Digital Strategy</p>
+				<p>Social Campaigns</p>
+				<p>Email Marketing</p>
+				<p>Branding</p>
+			</div>
 			<div class="body-text">
+				<h3 class="subtitle atiza--bold">Creating solutions to make better websites and emails.</h3>
+				<h2 class="subtitle atiza--bold">Working with you to make smart solutions.</h2>
 				<p>
-					I've seen many poor websites and emails and knew that I could be of some help to make them better. While many people would just care about giving you something pretty, I want to go deeper. I want to educate my clients and go beyond the visuals to understand how the products created will help their businesses thrive and keep their customers happy.
+					We provide concept-driven creative solutions that are led by an intelligent understanding of the task at hand and achieved through research and strategic insights. Solutions that are both aesthetically pleasing and most importantly effective. Our diverse services allow for a consistent brand perception, making us a singular resource for all your design, content, and strategy needs.
 				</p>
 				<p>
-					I design and build websites that are speedy to load, easy to navigate, and responsive from the start with a design that is user-friendly and accessible for many people. The world of emails is different and sometimes confusing, I am knowledgable about best practices, email etiquette and the legal ramifications of not following offical guidelines for emails. I can also assist with the nuanced art of email campaigns, a lot of research and trial and error.
+					I create user-centered digital solutions that are led by a understanding of your specific circumstance and executed with strategic intent and thorough research. These solutions go beyond simply visually appealing, they are effective and all encompassing. The services provided build enduring, engaging, and intuitive brands and products, making this a reliable option for consultation, design or development for your digital products.
 				</p>
-				<h3 class="margin-btm-10">What I do</h3>
+				<h3 class="margin-btm-10 atiza--bold">Why I Do What I Do.</h3>
+				<p>
+					There are many poorly made websites and emails and I knew that I could be a force of change and turn the tide around. While many people would care about giving you <strong>only something pretty</strong>, I want to go deeper then that. I want to take clients farther by educating them and going beyond the visuals, enabling them to make informed decisions on their companies' future. Understanding how these products will help their businesses thrive and keep their customers happy and engaged.
+				</p>
+				<h2 class="subtitle atiza--bold">Services Offered</h2>
+				<h3 class="margin-btm-10 atiza--bold"><a id="websites">Web Design &amp; Development</a></h3>
+				<p>
+					I design and build websites that are responsive, fast, user-friendly, and accessible for many people. My sites are built with the user in mind and will be specific for your individual need. With the option of having a dedicated Content Management System (CMS), to keep any changes that need to be made on your own terms.
+				</p> 
+				<h3 class="margin-btm-10 atiza--bold"><a id="emails">Email Marketing</a></h3>
+				<p>	
+					I'm knowledgable about email best practices, etiquette and the legal consequences of not following rules (CAN-SPAM). I know the best procedures for email list creation, creating a list of customers happy to hear from your company; the best practices and sending procedures to not overload those reciepents; how to create a successful campaign; and learning what your customers really want.
+				</p>
+				<h3 class="margin-btm-10 atiza--bold"><div id="consulting">Digital Consulting</div></h3>
+				<p>
+					Sometimes you just need advice/guidance on what your business could be doing better or what you path you should choose that's best for your business. I consult about websites from hosting and domain registration to direction on what platform you should be using (Squarespace, Wordpress, Shopify, Wix, etc). Anything in the digital realm that could affect your business I can answer.
+				</p>
+				<h3 class="margin-btm-10 atiza--bold">Full Digital Services</h3>
+				<p>
+					UI/UX • Web Design/Development • Mobile Design • Email Design/Development • Ecommerce • Digital Strategy • Social Campaigns • Email Campaigns
+				</p>
 				<p>
 					Web Development, Web Design, Email Development, Email Design, Email Campaign Management, Creative Direction
 				</p>
-				<h3 class="margin-btm-10">Worked with</h3>
+				<h2 class="subtitle atiza--bold">People I've Worked With</h2>
 				<p>
-					PHH Mortgage, The American School of Physicians, Lenox Inc, Saint Joseph's University, AKA By Design, United Nations, AEGIS Communications, Dental Learning Systems.
+					PHH Mortgage, The American College of Physicians, Lenox Inc, Saint Joseph's University, AKA By Design, United Nations, AEGIS Communications, Dental Learning Systems.
 				</p>
 			</div>
-		</div>
-	</div>
+	</div> #}
 </main>
 {% endblock %}

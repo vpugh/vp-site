@@ -1,3 +1,4 @@
+@import "variables";
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -65,6 +66,51 @@
 }
 .text-align-center {
 	text-align: center;
+}
+.margin-btm-140 {
+	margin-bottom: 140px !important;
+}
+.line-after {
+	position: relative;
+	// margin-bottom: 140px !important;
+	&:after {
+		position: absolute;
+		left: 0;
+		bottom: -1.5rem;
+		content: "";
+		width: 2em;
+		height: 3px;
+		.green & {
+			background-color: $theme-green;
+		}
+		.blue & {
+			background-color: $theme-blue;
+		}
+		.orange & {
+			background-color: $theme-orange;
+		}
+	}
+}
+.line-before {
+	position: relative;
+	// margin-top: 140px !important;
+	&:before {
+		position: absolute;
+		left: 0;
+		top: -1.5rem;
+		content: "";
+		width: 2em;
+		height: 3px;
+		.green & {
+			background-color: $theme-green;
+		}
+		.blue & {
+			background-color: $theme-blue;
+		}
+		.orange & {
+			background-color: $theme-orange;
+		}
+	}
 }
 * html .clearfix             { zoom: 1; } /* IE6 */
 //*:first-child+html .clearfix { zoom: 1; } /* IE7

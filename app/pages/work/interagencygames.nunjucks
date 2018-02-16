@@ -9,60 +9,71 @@ UN Inter-Agency Games | Design &amp; Development Consulting | Victoria Pugh
 {% set activePage = "work" %}
 {% endblock %}
 
+
 {% block jumbotron %}
-<div class="work--header">
-		<div class="container">
-			<div class="col col12 sm-col12">
-				<h2 class="work--title">United Nations Inter-Agency Games 2014</h2>
-				<p class="work--summary">The design and development of a website to enhance user-experience with an emphasis on making it easier and more comfortable to navigate.</p>
-				<h3 class="work--subtitle">
-					<span>Web Design</span>
-					<span>Web Development</span>
-					<span>UX/UI</span>
-				</h3>
+<section class="jumbotron">
+	<div class="container grid grid--6col">
+			<div class="jumbotron-content grid--2-4">
+				<h2 class="jumbotron-title atiza--bold">United Nations Inter-Agency Games 2014</h2>
+				<p class="jumbotron-subtitle">Building a website based on enhancing the user-experience, making it easier and more comfortable to navigate.</p>
+				<p class="jumbotron-description">Website Design &amp; Development, UX/UI</p>
 			</div>
-		</div>
+			<img class="jumbotron-image" src="http://victoriapugh.net/images/gallery/iag-ny/macbook-homepage-2.png" alt="">
 	</div>
+</section>
 {% endblock %}
 
 {% block content %}
 <main>
 	
 	<div class="container">
-		<div class="col col12 sm-col12">
-			<article class="body-text margin--auto">
-				<h2 class="article--title">Background</h2>
-				<p>
-					The United Nations (UN) is an intergovernmental organization to promote international co-operation after World War II in order to prevent another such conflict. Its objectives include maintaining international peace and security, promoting human rights, fostering social and economic development, protecting the environment, and providing humanitarian aid in cases of famine, natural disaster, and armed conflict.
-				</p>
-				<h2 class="article--title">The Brief</h2>
-				<p>
-					United Nations HQ (NYC) were hosting the 41st Inter-Agency Games, the first time the games were being held in New York City. They wanted to go above and beyond for these games by creating a new look website and matching promotional pieces and signage. The timeline was very short for this project. I had 2 months to go from research/conception to website launch.
-				</p>
-			</article>
-			<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/macbook-homepage-2.png" alt="">
-			<article class="body-text margin--auto">
-				<h2 class="article--title">Research</h2>
-				<p>
-					The first information I was given was what they didn’t want in a site, all the past Inter-Agency Games websites. They were simple sites that were text heavy and lacking in images. They weren't the most visually appealing sites. I based my research for this project on similar setups, an international game event. My instinct was to investigate the Olympics and World Cups, two of the largest events that fit the criteria and would be the best at showcasing the different aspects of the games to keep in mind.
-				</p>
-				<div class="article--image">
-					<img class="" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-France.jpg" alt="">
-					<img class="" src="http://victoriapugh.net/images/gallery/iag-ny/IAG-Spain.jpg" alt="">
-					<p class="article--caption">The sites for the two prior events.</p>
-				</div>
-				<h2 class="article--title">Wireframes &amp; Prototypes</h2>
-				<p>
-					My role was the design and development of the site, not designing the assets. I wanted to create a layout that would accommodate the colors, logo and any other assets the United Nations designers came up with. There was a quick review process with the Coordination Committee and the United Nations Print Department. After the review I created a live prototype so I could easily update it and everyone on it's progress. This made it easier to get feedback on the final product.
-				</p>
-				<img class="article--image" src="http://toripugh.com/images/gallery/uniag/IAG-Prototypes.jpg" alt="">
-				<h2 class="article--title">Launch & Results</h2>
-				<p>
-					The new site was successful in bringing more visual elements to the new design while still being full of necessary information. The launch of the site was 4 months before the event, to get everyone on the same page for registration and coordination for the event. After the site launch there were over 44,000 pageviews with a bounce rate of 34% (lower bounce rate is good), an average of 4 pages per session (people viewed at least 4 pages every visit) and for an average duration of about 4 mins.
-				</p>
-				{# <img class="article--image" src="http://toripugh.com/images/gallery/uniag/IAG-Results.jpg" alt=""> #}
-				<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/iag-full-homepage-2.jpg" alt="">
-			</article>
+		<article class="body-text margin--auto">
+			<h2 class="article--title">Background</h2>
+			<p>
+				The United Nations is an international organization founded in 1945. It is currently made up of 193 Member States. The mission and work of the United Nations are guided by the purposes and principles contained in its founding Charter. Due to the powers vested in its Charter and its unique international character, the United Nations can take action on the issues confronting humanity in the 21st century, such as peace and security, climate change, sustainable development, human rights, disarmament, terrorism, humanitarian and health emergencies, gender equality, governance, food production, and more.
+			</p>
+			<p>
+				In 1971, UN Geneva organised the first multi-institutional sports competition in Champéry, Switzerland. Ten organizations of the UN System with offices in Europe participated. The Games included the following disciplines: chess, football, table tennis, tennis and men's volleyball. Thus the United Nations Inter-Agency Games were initiated and the principle of alternating the venue and the responsibility for the organization of the Games among the UN organizations in Geneva, Rome, Vienna and Paris were adopted. General Rules for the Games were adopted and a Control Commission established to assure their adherence.
+			</p>
+		</article>
+		<img class="article--image" src="https://images.unsplash.com/photo-1466063642146-4b20cdabe9aa?auto=format&amp;fit=crop&amp;w=1517&amp;q=80" alt="United Nations Building in New York City, NY">
+		<article class="body-text margin--auto">
+			<h2 class="article--title">The Brief</h2>
+			<p>
+				In 2014 the United Nations HQ (NYC) would be hosting the 41st Inter-Agency Games. This would be the first time the games were being held in New York City. For this special occasion they wanted to go above and beyond for these games and create a new look for the website and matching design for the promotional pieces and signage. The website would be created first and that would set the tone for the print visuals.
+			</p>
+			<p>The timeline for completion was short, the website was started just a few months before the event was due to commence. I had a project 2 months to go from research/conception to website launch. They wanted the website to be functional so that people could register for the event and they could use it to upload news updates.</p>
+			<h2 class="article--title">Research</h2>
+			<p>
+				Before I did any research myself, I was given an idea of what they didn't want. They used the current and past Inter-Agency Games websites that they had at the time as examples of what they wanted to avoid. They were simple sites that were text heavy and lacking in images. They weren't the most visually appealing sites.
+			</p>
+		</article>
+	</div>
+		<div class="full-width-img">
+			<img src="http://victoriapugh.net/images/gallery/iag/iag-olddesign.png" alt="">
 		</div>
+	<div class="container">
+		<article class="body-text margin--auto">
+			<p>
+				When I started my research for this project I centered it on similar criteria. The criteria was an international event, my instinct was to investigate the Olympics and World Cups—two of the largest events that fit the criteria and would be the best at showcasing the different aspects of the games to keep in mind.
+			</p>
+			<h2 class="article--title">Wireframes &amp; Prototypes</h2>
+			<p>
+				My role was the design and development of the site, not designing the assets. I wanted to create a layout that would accommodate the colors, logo and any other assets the United Nations designers came up with. There was a quick review process with the Coordination Committee and the United Nations Print Department. After the review I created a live prototype so I could easily update it and everyone on it's progress. This made it easier to get feedback on the final product.
+			</p>
+			</article>
+	</div>
+		<div class="full-width-img">
+			<img src="http://victoriapugh.net/images/gallery/iag/iag-initialdesign.png" alt="">
+		</div>
+	<div class="container">
+		<article class="body-text margin--auto">
+			<h2 class="article--title">Launch & Results</h2>
+			<p>
+				The new site was successful in bringing more visual elements to the new design while still being full of necessary information. The launch of the site was 4 months before the event, to get everyone on the same page for registration and coordination for the event. After the site launch there were over 44,000 pageviews with a bounce rate of 34% (lower bounce rate is good), an average of 4 pages per session (people viewed at least 4 pages every visit) and for an average duration of about 4 mins.
+			</p>
+			{# <img class="article--image" src="http://toripugh.com/images/gallery/uniag/IAG-Results.jpg" alt=""> #}
+			<img class="article--image" src="http://victoriapugh.net/images/gallery/iag-ny/iag-full-homepage-2.jpg" alt="">
+		</article>
 </main>
 {% endblock %}

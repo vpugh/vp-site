@@ -97,7 +97,7 @@ header {
 }
 
 .logo {
-	float: left;
+	// float: left;
 	position: absolute;
 	top: 3px;
 	transition: opacity 400ms ease;
@@ -125,4 +125,14 @@ header {
 	&:hover {
 		opacity: .5;
 	}
+}
+.logo-group span {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17.5px;
+    margin-left: 9px;
+    position: relative;
+    top: 3px;
+    font-weight: 200;
 }

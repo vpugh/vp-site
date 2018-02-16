@@ -1,0 +1,28 @@
+.blog-articles {
+    color: inherit;
+    transition: all .3s ease-in-out;
+    display: block;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    &:hover {
+        transform: translateY(-8px);
+        color: lighten(color(text,light),10%);
+    }
+}
+.article-- {
+    &title {
+        margin-bottom: 0;
+        font-size: 1.3em;
+    }
+    &date {
+        font-size: .8em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #7B7A7A;
+        font-style: italic;
+        &:before {
+            content: "Published:";
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "partials-v2/variables/breakpoints";
+
+.flex {
+    
+    @include breakpoint(desktop, min-width) {
+        display: flex;
+    }
+    .one-col {
+        &:not(:last-child){
+            padding-right: 3%;
+        }
+        width: 100%;
+        @include breakpoint(desktop, min-width) {
+            width: 33.333%;
+        }
+    }
+}

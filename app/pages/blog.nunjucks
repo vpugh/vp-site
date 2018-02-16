@@ -1,0 +1,84 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %}
+Blog | Email and Website Design, Development, &amp; Consulting - VP Designs
+{% endblock %}
+
+{% block settings %}
+{% set colorScheme = "dark" %}
+{% set activePage = "blog" %}
+{% endblock %}
+
+{% block content %}
+<main>
+	<div class="container clearfix">
+        <div class="body-text">
+            <h3 class="blurb-title atiza--bold line-after margin-btm-60">Writings and Mental Musings</h3>
+            <h2 class="subtitle">Striving to write something every two weeks. Range from inspiration, techniques, technology and business strategies.</h2>
+        </div>
+            <div class="top-space grid grid--2col">
+                <a class="blog-articles" href="https://medium.com/@teekatwo/what-you-shouldnt-do-with-mailing-lists-91a52d89cc56" target="_blank">
+                <h3 class="article--title atiza--bold">What You Shouldn’t do With Mailing Lists</h3>
+                <p class="article--date">February 13, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/the-benefits-of-being-an-eternal-learner-ecb495355b6d" target="_blank">
+                <h3 class="article--title atiza--bold">The Benefits of Being an Eternal Learner</h3>
+                <p class="article--date">February 7, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/dont-fear-failure-learn-from-it-338565aef743" target="_blank">
+                <h3 class="article--title atiza--bold">Don’t Fear Failure, Learn From It</h3>
+                <p class="article--date">January 31, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/improvement-requires-a-lot-of-practice-f5802a2954d6" target="_blank">
+                    <h3 class="article--title atiza--bold">Improvement Requires a lot of Practice</h3>
+                    <p class="article--date">January 24 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/emails-arent-as-simple-as-you-think-987c6dfeb09e" target="_blank">
+                    <h3 class="article--title atiza--bold">Emails aren’t as simple as you think</h3>
+                    <p class="article--date">January 17, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/tips-on-overcoming-imposter-syndrome-fca5409afa75" target="_blank">
+                    <h3 class="article--title atiza--bold">Tips on overcoming Imposter Syndrome</h3>
+                    <p class="article--date">January 10, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/whats-the-best-way-to-present-your-freelance-business-studio-or-person-b1dd2853549f" target="_blank">
+                    <h3 class="article--title atiza--bold">What’s the best way to present your freelance business: Studio or Person?</h3>
+                    <p class="article--date">January 3, 2018</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/using-social-media-to-your-advantage-446598468375" target="_blank">
+                    <h3 class="article--title atiza--bold">Using Social Media to Your Advantage</h3>
+                    <p class="article--date">December 18, 2017</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/knowing-when-to-readjust-your-dreams-1886b6aa9f5b" target="_blank">
+                    <h3 class="article--title atiza--bold">Knowing when to readjust your dreams</h3>
+                    <p class="article--date">November 6, 2017</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/creating-my-own-gulp-based-email-workflow-system-35c50725cdb8" target="_blank">
+                    <h3 class="article--title atiza--bold">Creating my own Gulp-based email workflow system</h3>
+                    <p class="article--date">October 23, 2017</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/mastering-the-art-of-admitting-you-dont-know-something-1148066ef200" target="_blank">
+                    <h3 class="article--title atiza--bold">Mastering the art of admitting you don’t know something</h3>
+                    <p class="article--date">October 8, 2017</p>
+                </a>
+	            <a class="blog-articles" href="https://medium.com/@teekatwo/how-to-explain-what-design-is-to-non-designers-72838fc12b09" target="_blank">
+                    <h3 class="article--title atiza--bold">How to Explain What Design is to Non-Designers</h3>
+                    <p class="article--date">September 23, 2017</p>
+                </a>
+	            <a class="blog-articles" href="https://medium.com/@teekatwo/be-tron-fight-for-the-user-f96efc142876" target="_blank">
+                    <h3 class="article--title atiza--bold">Be Tron: Fight for the User</h3>
+                    <p class="article--date">September 11, 2017</p>
+                </a>
+                <a class="blog-articles" href="https://blog.prototypr.io/how-to-fall-down-and-get-back-up-45b325ca717f" target="_blank">
+                    <h3 class="article--title atiza--bold">How to Fall Down and Get Back Up</h3>
+                    <p class="article--date">August 30, 2017</p>
+                </a>
+                <a class="blog-articles" href="https://medium.com/@teekatwo/giving-a-talk-that-i-didnt-even-know-i-really-wanted-to-give-ae9226fd8fce" target="_blank">
+                    <h3 class="article--title atiza--bold">Giving a Talk That I Didn’t Know I Wanted to Give</h3>
+                    <p class="article--date">August 12, 2017</p>
+                </a>
+            </div>
+        </div>
+	</div>
+</main>
+{% endblock %}

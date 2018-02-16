@@ -8,10 +8,13 @@
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="css/main.css" title="" type="text/css" media="screen" charset="utf-8">
 	<!--endbuild-->
+	<!-- Calluna Sans from TypeKit -->
+	<script src="https://use.typekit.net/qie0vrf.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	{% endblock %}
 </head>
-<body>
-	{% block settings %}{% endblock %}
+{% block settings %}{% endblock %}
+<body {%if activePage != '' %}class="{{activePage}}"{%endif%}>
 	{% include "partials/header.nunjucks" %}
 	
 	{% block jumbotron %}{% endblock %}
@@ -20,11 +23,21 @@
 	
 	{% include "partials/contactbox.nunjucks" %}
 	{% include "partials/footer.nunjucks" %}
+	<a href="#0" class="sttop"><span class="sr-only">Back to Top</span>Top</a>
 	{% block js %}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!--build:js js/main.min.js -->
 	<script src="js/script.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+			if ($('body').hasClass('orange')) {
+				$('.jumbotron').addClass('pattern3');
+			} else if ($('body').hasClass('green')) {
+				$('.jumbotron').addClass('pattern4');
+			} else {
+				$('.jumbotron').addClass('pattern5');
+			}
+	</script>
 	<!-- endbuild -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

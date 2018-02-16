@@ -1,0 +1,57 @@
+.contact {
+    // Box styles
+    color: #fff;
+    text-align: center;
+    padding: 10vh 22vw;
+    @include breakpoint(tablet, max-width){
+        padding: 10vh 6vw;
+    }
+
+    // Background Colors
+    .blue & {
+        background-color: #0093e9;
+    }
+    .green & {
+        background-color: #45b649;
+    }
+    .orange & {
+        background-color: #fc4a1a;
+    }
+
+    &--header {
+        font-size: 1.75em;
+        margin-top: 0;
+    }
+
+    // .link {
+    //     color: #fff;
+    //     font-weight: 700;
+    //     display: inline-block;
+    //     &:after {
+    //         content: "";
+    //         display: block;
+    //         opacity: .4;
+    //         height: 3px;
+    //         -webkit-transition: -webkit-transform .3s ease;
+    //         transition: -webkit-transform .3s ease;
+    //         transition: transform .3s ease;
+    //         transition: transform .3s ease,-webkit-transform .3s ease;
+    //         background-color: #222;
+    //         -webkit-transform-origin: 0;
+    //         transform-origin: 0;
+    //     }
+    // }
+
+    // Button Styles
+    .button {
+        background-color: color(text,base);
+        color: #fff;
+        transition: .3s ease-out;
+        display: inline-block;
+        padding: 18px 44px;
+        margin-top: 2vh;
+        &:hover {
+            background-color: color(text,dark);
+        }
+    }
+}

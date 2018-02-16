@@ -1,0 +1,216 @@
+header {
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	&.dark {
+		color: color(text, base);
+		a {
+			color: color(text, base);
+		}
+		.logo svg {
+			fill: color(text, base);
+		}
+		path {
+			fill: rgba(0,0,0,.09);
+		}
+	}
+}
+.header-container {
+	@include breakpoint(tablet, min-width) {
+		padding: 20px 0 0;
+	}
+	@include breakpoint(desktop, min-width) {
+		padding: 20px 0 0;
+	}
+    z-index: 10;
+    position: relative;
+}
+.header-nav {
+	position: relative;
+	float: right;
+	-webkit-font-smoothing: antialiased;
+	@include breakpoint(tablet, max-width) {
+		display: none;
+	}
+	ul {
+		@include breakpoint(smobile, max-width) {
+			// float: none;
+			text-align: center;
+			margin: 20% 0 0 0;
+			padding: 20px 0 0;
+		}
+		// float: right;
+	}
+	li {
+		&:first-child {
+			padding-left: 0;
+		}
+		@include breakpoint(smobile, max-width) {
+			display: block;
+			padding: 0;
+			font-size: 22px;
+			font-size: calc(100vw/10);
+			line-height: 2.5;
+		}
+		display: inline-block;
+		padding-left: 36px;
+		line-height: 55px;
+		font-size: 19px;
+		letter-spacing: 1px;
+	}
+	a {
+		color: color(text,white);
+	    border-bottom: 2px solid;
+	    border-color: transparent;
+		transition: all 300ms ease-out;
+        font-weight: bold;
+		&:hover {
+			color: rgba(#fff, .65);
+			border-color: rgba(#fff, 1);
+			padding-bottom: 6px;
+			.dark & {
+				color: #444;
+				border-color: rgba(#444, .6);
+			}
+		}
+		&.active {
+			color: rgba(#fff, .5);
+			border-color: rgba(#fff, .6);
+			padding-bottom: 6px;
+			.dark & {
+				color: #444;
+				border-color: rgba(#444, .6);
+			}
+		}
+	}
+	&.open {
+		display: block !important;
+		visibility: visible;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #444;
+		li {
+			line-height: 2;
+			width: 100%;
+			display: block;
+			padding: 0;
+			text-align: center;
+			font-size: calc(100vw/10);
+		}
+		ul {
+			padding: 0;
+			@include breakpoint(lmobile, max-width) {
+				padding-top: 26vh;
+			}
+			@include breakpoint(tablet, min-width) {
+				padding-top: 16vh;
+			}
+			margin: 0;
+			width: 100%;
+		}
+	}
+}
+
+.logo {
+	// float: left;
+	position: absolute;
+	top: 3px;
+	transition: opacity 400ms ease;
+	padding-top: 30px;
+	@include breakpoint(smobile, max-width) {
+        width: 165px;
+		left: 10px;
+		float: none;
+	}
+	@include breakpoint(lmobile, max-width) {
+		width: 165px;
+		left: 10px;
+		float: none;
+	}
+	@include breakpoint(tablet, min-width) {
+		width: 180px;
+		position: relative;
+	}
+	@include breakpoint(desktop, min-width) {
+	    width: 180px;
+	}
+	&:hover {
+		opacity: .5;
+	}
+}
+
+#triangle-shape {
+	height: 26px;
+	width: auto;
+	svg {
+		fill: rgba(255, 255, 255, 0.29);
+	}
+}
+
+.logo-group {
+    display: inline-block;
+    float: left;
+    padding-top: 1em;
+    line-height: 55px;
+
+	@media (max-width: 767px) {
+		float: none;
+        padding: 0;
+        line-height: initial;
+        position: absolute;
+        top: 30px;
+	}
+
+	@media (min-width: 768px) {
+		float: none;
+        padding: 0;
+        line-height: initial;
+        position: absolute;
+        top: 50px;
+	}
+    // @include breakpoint(tablet, max-width) {
+    //     float: none;
+    //     padding: 0;
+    //     line-height: initial;
+    //     position: absolute;
+    //     top: 30px;
+    // }
+
+    a {
+        transition: all 300ms ease-out;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    span {
+        .dark & {
+            color: color(text, base);
+        }
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        margin-left: 9px;
+        position: relative;
+        top: -6px;
+    }
+
+    .animate--disappear {
+        margin: 0;
+        display: inline-block;
+        max-width: 88px;
+        width: 0%;
+        opacity: 0;
+        // animation-duration: 1.2s;
+        // animation-name: disappear;
+        // animation-delay: 800ms;
+        // animation-fill-mode: forwards;
+        transition: all 1600ms ease-in-out 600ms;
+    }
+}

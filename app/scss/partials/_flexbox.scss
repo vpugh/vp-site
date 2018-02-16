@@ -1,0 +1,15 @@
+.flex {
+    
+    @include desktop {
+        display: flex;
+    }
+    .one-col {
+        &:not(:last-child){
+            padding-right: 3%;
+        }
+        width: 100%;
+        @include desktop {
+            width: 33.333%;
+        }
+    }
+}

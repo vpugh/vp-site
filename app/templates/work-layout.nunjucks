@@ -8,10 +8,13 @@
 	<!--build:css ../css/styles.min.css-->
 	<link rel="stylesheet" href="../css/main.css" title="" type="text/css" media="screen" charset="utf-8">
 	<!--endbuild-->
+	<!-- Calluna Sans from TypeKit -->
+	<script src="https://use.typekit.net/qie0vrf.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	{% endblock %}
 </head>
-<body>
-	{% block settings %}{% endblock %}
+{% block settings %}{% endblock %}
+<body {%if activePage != '' %}class="{{activePage}}"{%endif%}>
 	{% include "partials/header.nunjucks" %}
 	
 	{% block jumbotron %}{% endblock %}

@@ -1,0 +1,76 @@
+@import "partials-v2/variables/typography";
+@import "partials-v2/variables/colorMap";
+@import "partials-v2/variables/breakpoints";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+picture {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #eeeee9;
+    padding: 0;
+    margin: 0;
+    font-family: "calluna-sans", $sans-serif;
+    font-size: 16px;
+    font-size: calc(16px + (22 - 18) * (100vw - 320px)/(1024 - 320));
+    color: color(text,base);
+	&.active {
+		overflow: hidden;
+	}
+}
+
+main {
+	height:100%;overflow:auto;
+	@include breakpoint(lmobile, max-width) {
+		padding-top: 60px;
+	}
+	@include breakpoint(lmobile, min-width) {
+		padding-top: 60px;
+	}
+	@include breakpoint(tablet, min-width) {
+		padding-top: 60px;
+	}
+	@include breakpoint(desktop, min-width) {
+		padding: 100px 0 25px 0;
+	}
+}
+p {
+	@include breakpoint(tablet,max-width){
+		font-size: 1.1rem;
+	}
+}
+.plain-link {
+	.blue & {
+		color: color(blue, base);
+	}
+	.orange & {
+		color: color(orange, base);
+	}
+	.green & {
+		color: color(green, base);
+	}
+	&:hover {
+		.blue & {
+			color: color(blue, dark);
+		}
+		.orange & {
+			color: color(orange, dark);
+		}
+		.green & {
+			color: color(green, dark);
+		}
+	}
+}

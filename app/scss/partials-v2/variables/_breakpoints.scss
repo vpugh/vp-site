@@ -1,0 +1,51 @@
+// @import "partials-v2/modules/mixins";
+
+$mobile-small: 320px;
+$mobile-large: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+$breakpoints: (
+    xldesktop: 1440px,
+    desktop: 1024px,
+    tablet: 768px,
+    lmobile: 480px,
+    smobile: 320px
+);
+
+@mixin breakpoint($breakpoint, $size) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media ($size: $value) {
+            @content;
+        }
+    }
+    @else {
+      @warn "Breaking - Unknown `#{$breakpoint}` in $breakpoints";
+    }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+//   &:after, 
+//   &:before {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+
+  @include breakpoint(tablet, min-width) {
+      padding-left: 6%;
+      padding-right: 6%;
+      max-width: $tablet;
+  }
+
+  @include breakpoint(desktop, min-width) {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: $desktop;
+  }
+}

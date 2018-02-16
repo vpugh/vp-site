@@ -1,0 +1,90 @@
+
+.work {
+    .jumbotron {
+        @include breakpoint(lmobile,max-width){
+            padding-top: 20px;
+        }
+        &-title {
+            font-size: 2.6em;
+            line-height: 1.2;
+            width: 90%;
+            @include breakpoint(lmobile, max-width){
+                font-size:2.2em;
+                width: 100%;
+            }
+        }
+        &-subtitle {
+            font-size: 1.1em;
+            width: 86%;
+            padding-bottom: 20px;
+            @include breakpoint(lmobile, max-width){
+                width: 100%;
+            }
+        }
+        &-description {
+            color: #fff;
+            text-align: left;
+            padding-bottom: 20px;
+            animation-duration: 1.2s;
+            animation-name: a;
+            animation-delay: .8s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            margin: 0;
+            font-size: .9rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            line-height: 1.5;
+            text-transform: uppercase;
+            @include breakpoint(lmobile, max-width){
+                font-size:.8em;
+            }
+            &::before {
+                content: "—";
+                padding-right: 5px;
+            }
+        }
+        &-content {
+            padding-left: 30px;
+        }
+        &-image {
+            grid-column: 1/ 4;
+            grid-row: 1/-1;
+            padding-right: 20px;
+            padding-top: 120px;
+        }
+    }
+    main {
+        @include breakpoint(tablet,max-width){
+            padding-top: 20px;
+        }
+    }
+    main p {
+        color: color(text,light);
+        margin-bottom: 5rem;
+    }
+    .body-text {
+        width: 75%;
+        @include breakpoint(tablet,max-width){
+            width: auto;
+        }
+        p:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    .full-width-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+.article--image,
+.full-width-img {
+    padding-bottom: 5vh;
+}
+.article--caption {
+    font-size: .8em;
+    padding-top:.5em;
+    text-align: center;
+}

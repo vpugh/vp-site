@@ -1,10 +1,11 @@
-<div class="contact-box clearfix">
+<div class="contact">
 	<div class="container">
-		<div class="col col10 sm-col12 col1-shift-left">
-			<a class="typeform-share link contact-blurb-links" href="https://tori83.typeform.com/to/b6gima" data-mode="1" target="_blank">Let's work together!</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-			<span class="contact-divider">|</span>
-			<a class="contact-blurb-links" href="mailto:hello@victoriapugh.net?subject=I Have a Question">Have questions?</a>
+		<h2 class="contact--header">Ready to work together!?</h2>
+		<p class="contact--text">If you have an exciting idea and are looking for a digital partner to bring it to life, let's talk! If you'd like to just chat, shoot us an email.</p>
+		<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+		<div class="grid grid--2col grid-gap-15">
+		<a class="typeform-share button" href="https://tori83.typeform.com/to/b6gima" data-mode="1" href="mailto:hello@victoriapugh.net?subject=I Have a Question">Let's talk! (Form)</a>
+		<a class="button" href="mailto:hello@victoriapugh.net?subject=I Have a Question" target="_blank">hell0@victoriapugh.net</a>
 		</div>
 	</div>
 </div>

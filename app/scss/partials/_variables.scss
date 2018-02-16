@@ -1,7 +1,19 @@
-$theme-blue  : #00C7FF;
-$theme-orange: #FF9600;
-$theme-green : #8AC641;
+// $theme-blue  : #00C7FF;
+// $theme-orange: #FF9600;
+// $theme-green : #8AC641;
 $text-color  : #4A4A4A;
-$gradient-green-blue  : linear-gradient(-60deg, $theme-green 0%, $theme-blue 100%);
-$gradient-blue-green  : linear-gradient(-60deg, $theme-blue 0%, $theme-green 100%);
-$gradient-green-orange: linear-gradient(-60deg, $theme-orange 0%, $theme-green 100%);
+$theme-orange: #fc4a1a;
+$theme-blue: #0093E9;
+$theme-green: #56ab2f;
+$primary-green: #56ab2f;
+// $secondary-green: #abef57;
+$secondary-green: desaturate($primary-green, 25%);
+$primary-blue: #0093E9;
+$secondary-blue: desaturate($primary-blue, 25%);
+$primary-orange: #fc4a1a;
+$secondary-orange: desaturate($primary-orange, 25%);
+$gradient-orange-2: linear-gradient(62deg, #fc4a1a 0%, 
+#f7b733 100%);
+$gradient-blue-2: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+$gradient-green-2: linear-gradient(45deg, #56ab2f 0%, #abef57 100%);
+

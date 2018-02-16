@@ -1,8 +1,6 @@
 {% extends "layout.nunjucks" %}
 
-{% block title %}
-Design &amp; Development Consulting | Victoria Pugh
-{% endblock %}
+{% block title %}Victoria Pugh Designs | Email and Website Design, Development, &amp; Consulting{% endblock %}
 
 {% block settings %}
 {% set colorScheme = "light" %}
@@ -11,52 +9,94 @@ Design &amp; Development Consulting | Victoria Pugh
 {% block jumbotron %}
 <section class="jumbotron">
 	<div class="container">
-		<div class="col col12 sm-col12">
+		{#<div class="col col12 sm-col12">#}
 			{# <h2 class="jumbotron-title black">Working with companies to create user centric digital products and engaging experiences.</h2> #}
-			<h2 class="jumbotron-title black">I partner with clients needing solutions for improving their digital products or seeking guidance in digital affairs.</h2>
+			{# <h2 class="jumbotron-title black">I partner with clients needing solutions for improving their digital products or seeking guidance in digital affairs.</h2> #}
+			<h2 class="jumbotron-title atiza--bold">Helping businesses build digital products that promote customer growth and engagement.</h2>
+			{#<h2 class="jumbotron-title atiza--bold">Creating email and website solutions and strategies for those needing help but don't know where or how to start</h2>#}
+			{#<h2 class="jumbotron-title black">Websites. Emails. Consultation.</h2>#}
 			{# <p class="jumbotron-subtitle col12 sm-col12">
 				I know that successful and functional products go beyond being visually pleasing. Factors to consider to develop thoughtful solutions are customer research, product planning and more. These create great brands with satisfied and engaged customers.
 			</p> #}
+			<p class="jumbotron-subtitle">Specializing in digital design, development and strategy. With a passion and love for creating products that puts the user first and makes things run better. Working with businesses (of all sizes) to create solutions to reach their specific goals.</p>
 			{# <p class="jumbotron-subtitle col12 sm-col12">
 				I know that developing successful products is more than just looks. You need to research, strategize, and use critical-thinking to imagine thoughtful solutions. These solutions are crucial to creating successful products, great brands and satisfied customers.
 			</p> #}
-			<p class="jumbotron-subtitle col12 sm-col12">
+			{#<p class="jumbotron-subtitle col12 sm-col12">I partner with clients needing solutions for improving their digital products or seeking guidance in digital affairs. These solutions will create engaging experiences and develop user-first products, which are crucial to creating successful products, great brands and satisfied customers.</p>#}
+			{# <p class="jumbotron-subtitle col12 sm-col12">
 				I know that developing successful products is more than just looks, it takes thoughtful solutions. These solutions will create engaging experiences and develop user-first products, which are crucial to creating successful products, great brands and satisfied customers.
-			</p>
+			</p> #}
 			{# <p class="jumbotron-subtitle col12 sm-col12">
 				Creating great websites &mdash; fast, efficient, responsive, user-friendly, and intuitive.
 			</p>
 			<p class="jumbotron-subtitle col12 sm-col12">
 				Devising emails and campaigns &mdash; knowledgable about email etiquette and best practices and how to incorporate these into your designs and campaigns.
 			</p> #}
-		</div>
+		{#</div>#}
 	</div>
 </section>
 {% endblock %}
 
 {% block content %}
 <main>
-	<div class="container">
-		<div class="col col12 sm-col12">
-			<div class="blurb clearfix">
-				<div class="col col12 sm-col12">
-					<div class="blurb-content">
-						<h3 class="blurb-title black">I specialize in the Development &amp; Design of Websites &amp; Emails; and Email Campaigns.</h3>
-					<p class="blurb-subtitle">
-						I work with clients to understand their ideas and create tailor-made solutions to reach their goals. These solutions vary depending on the situation and the goal to achieved. They can be a website redesign; better utilization of email lists; a brand refresh; realignment of company goals; or whatever your individual needs are.
-					</p>
-					<a class="text-link inline" href="/about">About Me</a>
-					<a class="typeform-share link text-link inline side-padding" href="https://tori83.typeform.com/to/b6gima" data-mode="1" target="_blank">Hire Me!</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-					</div>
-				</div>
-			</div>
+	<div class="container grid grid--3col specialties">
+		<div class="specialty">
+			<h2 class="atiza--bold">Email Marketing</h2>
+			<p>Want to connect with your customers, emails are perfect. Don't know how to make, send, or manage them? No worries, that's what we do.</p>
+			<a href="/about#emails" class="hover--button">Learn More</a>
+		</div>
+		<div class="specialty">
+			<h2 class="atiza--bold">Website Design & Development</h2>
+			<p>Looking to update an old site or creating a first-time site. From new technology to fast and easy to use sites, we can make it.</p>
+			<a href="/about#websites" class="hover--button">Learn More</a>
+		</div>
+		<div class="specialty">
+			<h2 class="atiza--bold">Digital Consulting</h2>
+			<p>Started a project and feel lost? Want to start a project but not sure where to go or what to do? If you've got questions, we've got answers.</p>
+			<a href="/about#consulting" class="hover--button">Learn More</a>
 		</div>
 	</div>
 	<div class="container">
-		<div class="col col12 sm-col12">
-			<ul class="portfolio-grid">
-			<li class="portfolio-grid--block-full" >
+		{# <div class="flex specialties">
+			<div class="one-col">
+				<div class="specialty">
+					<h2 class="atiza--bold">Emails</h2>
+					<p>Designing and building emails, managing campaigns, keeping your emails legal, and helping you grow your customer list.</p>
+					<a href="/about#emails" class="hover--button">Learn More</a>
+				</div>
+			</div>
+			<div class="one-col">
+				<div class="specialty">
+					<h2 class="atiza--bold">Websites</h2>
+					<p>Design and development of websites, integrating CMS, and developing strategies for creating satisfied customers.</p>
+					<a href="/about#websites" class="hover--button">Learn More</a>
+				</div>
+			</div>
+			<div class="one-col">
+				<div class="specialty">
+					<h2 class="atiza--bold">Consulting</h2>
+					<p>Creative Direction on projects, whether its the start or near the end. If you've got questions about the web, I have an answer.</p>
+					<a href="/about#consulting" class="hover--button">Learn More</a>
+				</div>
+			</div>
+		</div> #}
+		{# <div class="blurb clearfix">
+			<div class="blurb-content">
+				<h3 class="blurb-title atiza--bold">I work with clients to create tailor-made solutions to reach their goals.</h3>
+				<p class="blurb-subtitle">
+					These solutions vary depending on the situation and the goal to achieved. They can be a website redesign; better utilization of email lists; a brand refresh; realignment of company goals; or whatever your individual needs are. You can <a class="link inline" href="/about">learn more</a> about me and my process.
+				</p>
+				<a class="typeform-share btn primary inline" href="https://tori83.typeform.com/to/b6gima" data-mode="1" target="_blank">Hire Me!</a>
+				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+				</div>
+		</div> #}
+	</div>
+	
+	<div class="container">
+		{#<div class="col col12 sm-col12">#}
+			<h3 class="blurb-title atiza--bold line-after margin-btm-140"><a id="work">Selected Works</a></h3>
+			<ul class="grid grid--2col grid-gap-15 portfolio-grid">
+			<li class="portfolio-grid--block">
 					<a href="work/interagencygames">
 						<picture>
 							<source srcset="images/iag-thumb@2x.jpg" media="(max-width: 1440px)">
@@ -65,40 +105,45 @@ Design &amp; Development Consulting | Victoria Pugh
 							<img src="images/iag-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
-							<h3 class="portfolio-grid--details-company">Web Design, UI/UX, Web Development</h3>
-							<p class="portfolio-grid--details-description">United Nations Inter-Agency Games 2014</p>
+							<p class="portfolio-grid--details-description atiza--bold">United Nations Inter-Agency Games</p>
+							<h3 class="portfolio-grid--details-company">Developing a Website for an International Games</h3>
+							
 						</div>
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
 					<a href="work/ucd">
-						<picture>
+						{#<picture>
 							<source srcset="images/ucd-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/ucd-thumb@2x.jpg 2x, images/ucd-thumb@1x.jpg 1x" media="(max-width: 768px)">
 							<source srcset="images/ucd-thumb@2x.jpg 2x, images/ucd-thumb@1x.jpg 1x" media="(max-width: 1024px)">
 							<img src="images/ucd-thumb@1x.jpg" alt="">
-						</picture>
+						</picture>#}
+						<img src="images/ucd-thumb-2@2x.jpg" alt="">
 						<div>
-							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">Updates in Clinical Dentistry</p>
+							<p class="portfolio-grid--details-description atiza--bold">Updates in Clinical Dentistry</p>
+							<h3 class="portfolio-grid--details-company">A Workflow System for creating and developing an Email Series</h3>
+							
 						</div>
 					</a>
 				</li>
 				<li class="portfolio-grid--block">
 					<a href="work/cdeworld">
-						<picture>
+						{# <picture>
 							<source srcset="images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/cdeworld-thumb@2x.jpg 2x, images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 768px)">
 							<source srcset="images/cdeworld-thumb@2x.jpg 2x, images/cdeworld-thumb@1x.jpg 1x" media="(max-width: 1024px)">
 							<img src="images/cdeworld-thumb@1x.jpg" alt="">
-						</picture>
+						</picture> #}
+						<img src="images/cdeworld-thumb@1x.jpg" alt="">
 						<div>
+							<p class="portfolio-grid--details-description atiza--bold">CDEWorld</p>
 							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">CDEWorld</p>
+							
 						</div>
 					</a>
 				</li>
-				<li class="portfolio-grid--block">
+				{#<li class="portfolio-grid--block">
 					<a href="work/aegismedia">
 						<picture>
 							<source srcset="images/am-thumb@1x.jpg 1x" media="(max-width: 480px)">
@@ -107,26 +152,29 @@ Design &amp; Development Consulting | Victoria Pugh
 							<img src="images/am-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
+							<p class="portfolio-grid--details-description atiza--bold">AEGIS Media</p>
 							<h3 class="portfolio-grid--details-company">Web Design, UX/UI, Web Development</h3>
-							<p class="portfolio-grid--details-description">AEGIS Media</p>
+							
 						</div>
 					</a>
-				</li>
+				</li>#}
 				<li class="portfolio-grid--block">
 					<a href="work/interstice">
-						<picture>
+						{#<picture>
 							<source srcset="images/interstice-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/interstice-thumb@2x.jpg 2x, images/interstice-thumb@1x.jpg 1x" media="(max-width: 768px)">
 							<source srcset="images/interstice-thumb@2x.jpg 2x, images/interstice-thumb@1x.jpg 1x" media="(max-width: 1024px)">
 							<img src="images/interstice-thumb@1x.jpg" alt="">
-						</picture>
+						</picture>#}
+						<img src="http://victoriapugh.net/images/interstice-thumb@2x.jpg" alt="">
 						<div>
-							<h3 class="portfolio-grid--details-company">Web Design, Web Development, Theme</h3>
-							<p class="portfolio-grid--details-description">Interstice Theme</p>
+							<p class="portfolio-grid--details-description atiza--bold">Interstice Theme</p>
+							<h3 class="portfolio-grid--details-company">A Clean and Minimal Theme</h3>
+							
 						</div>
 					</a>
 				</li>
-				<li class="portfolio-grid--block" >
+				{#<li class="portfolio-grid--block" >
 					<a href="work/cmsemails">
 						<picture>
 							<source srcset="images/cms-thumb@2x.jpg" media="(max-width: 1440px)">
@@ -135,26 +183,29 @@ Design &amp; Development Consulting | Victoria Pugh
 							<img src="images/cms-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
+							<p class="portfolio-grid--details-description atiza--bold">Clinical Mastery Series</p>
 							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">Clinical Mastery Series</p>
+							
 						</div>
 					</a>
-				</li>
+				</li>#}
 				<li class="portfolio-grid--block">
 					<a href="work/tuftsemail">
-						<picture>
+						{#<picture>
 							<source srcset="images/iag-thumb@1x.jpg 1x" media="(max-width: 480px)">
 							<source srcset="images/tufts-email-thumb@2x.jpg 2x, images/tufts-email-thumb@1x.jpg 1x" media="(max-width: 768px)">
 							<source srcset="images/tufts-email-thumb@2x.jpg 2x, images/tufts-email-thumb@1x.jpg 1x" media="(max-width: 1024px)">
 							<img src="images/tufts-email-thumb@1x.jpg" alt="">
-						</picture>
+						</picture>#}
+						<img src="images/tufts-email-thumb@2x.jpg" alt="">
 						<div>
-							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">Tufts School of Dental Medicine</p>
+							<p class="portfolio-grid--details-description atiza--bold">Tufts School of Dental Medicine</p>
+							<h3 class="portfolio-grid--details-company">Replicating Website Branding in Emails</h3>
+							
 						</div>
 					</a>
 				</li>
-				<li class="portfolio-grid--block">
+				{#<li class="portfolio-grid--block">
 					<a href="work/motus">
 						<picture>
 							<source srcset="images/motus-thumb@1x.jpg 1x" media="(max-width: 480px)">
@@ -163,12 +214,13 @@ Design &amp; Development Consulting | Victoria Pugh
 							<img src="images/motus-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
+							<p class="portfolio-grid--details-description atiza--bold">Motus</p>
 							<h3 class="portfolio-grid--details-company">Web Design, Web Development</h3>
-							<p class="portfolio-grid--details-description">Motus</p>
+							
 						</div>
 					</a>
-				</li>
-				<li class="portfolio-grid--block">
+				</li>#}
+				{#<li class="portfolio-grid--block">
 					<a href="work/newsletters">
 						<picture>
 							<source srcset="images/newsletters-thumb@1x.jpg 1x" media="(max-width: 480px)">
@@ -177,13 +229,13 @@ Design &amp; Development Consulting | Victoria Pugh
 							<img src="images/newsletters-thumb@1x.jpg" alt="">
 						</picture>
 						<div>
+							<p class="portfolio-grid--details-description atiza--bold">Newsletters</p>
 							<h3 class="portfolio-grid--details-company">Email Design, Email Development</h3>
-							<p class="portfolio-grid--details-description">Newsletters</p>
 						</div>
 					</a>
-				</li>
+				</li>#}
 			</ul>
-		</div>
+		{#</div>#}
 	</div>
 </main>
 {% endblock %}

@@ -1,0 +1,25 @@
+.atiza {
+  font-family: "Atiza Text", Georgia, serif;
+  font-weight: 400;
+}
+.atiza--bold {
+  font-family: "Atiza Text", Georgia, serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+$sans-serif: Helvetica, Arial, sans-serif;
+
+.text {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	p {
+		margin-top: 0;
+	}
+}
+
+p {
+	letter-spacing: -.006em;
+	line-height: 1.5;
+}

@@ -1,0 +1,83 @@
+$text  : #4A4A4A;
+$orange: #eb4d28;
+// $orange: #FFE53B;
+$blue: #0693ea;
+// $blue: #FF2525;
+$green: #45b649;
+// $green: #FF0DF5;
+
+$colors: (
+    text: (
+        base: $text,
+        light: lighten($text, 15%),
+        dark: darken($text, 15%),
+        white: #ffffff
+    ),
+    orange: (
+        base: $orange,
+        light: lighten($orange, 15%),
+        dark: darken($orange, 15%),
+        trans: transparentize($orange, 0.5),
+        // gradient: linear-gradient(62deg, $orange 0%, #f7b733 100%)
+        gradient: linear-gradient(90deg, $orange, #fc8d1d),
+    ),
+    blue: (
+        base: $blue,
+        light: lighten($blue, 15%),
+        dark: darken($blue, 15%),
+        trans: transparentize($blue, 0.5),
+        // gradient: linear-gradient(160deg, $blue 0%, #80D0C7 100%),
+        gradient: linear-gradient(90deg, $blue, #0fd2ea),
+    ),
+    green: (
+        base: $green,
+        light: lighten($green, 10%),
+        dark: darken($green, 15%),
+        trans: transparentize($green, 0.5),
+        // gradient: linear-gradient(203deg, #DCE35B 0%, $green 100%)
+        gradient: linear-gradient(90deg, $green, #9db545)
+
+    )
+);
+
+@function color($color-name, $color-variant:null) {
+    @if ($color-variant != null) {
+        @return map-get(map-get($colors, $color-name), $color-variant);
+    } @else {
+        @return map-get($colors, $color-name);
+    }
+}
+
+// Themes
+
+$themes: (
+    theme1: theme-orange,
+    theme2: theme-blue,
+    theme3: theme-green
+);
+
+@function setStyle($map, $object, $style) {
+    @if map-has-key($map, $object) {
+        @return map-get(map-get($map, $object), $style);
+    }
+    @else {
+        @warn "The key ´#{$object} is not available in the map.";
+    }
+
+    @return null;
+}
+
+$config: (
+    theme1: (
+        background: color(orange,base),
+        color: color(text, white)
+    ),
+    theme2: (
+        background: color(blue,base),
+        color: color(text,white)
+    ),
+    theme3: (
+        background: color(green,base),
+        color: color(text,white)
+    )
+)

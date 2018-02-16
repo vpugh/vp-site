@@ -1,0 +1,63 @@
+@keyframes slideup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes lineargradient {
+	0% {
+		color: #00C7FF;
+		background-position:0% 50%
+	}
+		
+	50% {
+        color: #8AC641;
+        background-position:100% 50%
+    }
+        
+    100% {
+        color: #FF9600;
+        background-position:0% 50%
+    }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  95% {
+    width: inital;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+}
+
+@keyframes a {
+  0% {
+      transform: translateY(50px);
+      opacity: 0
+  }
+
+  50% {
+      opacity: 1
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1
+  }
+}

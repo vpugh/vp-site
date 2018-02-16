@@ -1,12 +1,25 @@
-@import "partials/mixins";
-@import "partials/typography";
-@import "partials/grid";
-@import "partials/utilities";
-@import "partials/buttons";
-@import "partials/base";
-@import "partials/header-navigation";
-@import "partials/hamburger";
-@import "library/homepage";
-@import "library/work";
-@import "library/about";
-@import "partials/footer";
+// Start Base Styles
+@import "partials-v2/base/base";
+
+// Variables
+// @import "partials-v2/variables/all";
+
+// Components 
+@import "partials-v2/components/buttons";
+@import "partials-v2/components/jumbotron";
+@import "partials-v2/components/navigation";
+@import "partials-v2/components/hamburger";
+@import "partials-v2/base/utilities";
+@import "partials-v2/components/stt";
+@import "partials-v2/components/contactbox";
+@import "partials-v2/components/footer";
+
+// Helpers
+@import "partials-v2/helpers/flexbox";
+@import "partials-v2/helpers/cssgrid";
+
+// Layout
+@import "partials-v2/layout/homepage";
+@import "partials-v2/layout/about";
+@import "partials-v2/layout/blog";
+@import "partials-v2/layout/workpages";

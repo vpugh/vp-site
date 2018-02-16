@@ -1,0 +1,219 @@
+// Blurb
+
+.blurb {
+	margin-top: 30px;
+	margin-bottom: 50px;
+
+	&-content {
+		@include breakpoint(desktop, min-width) {
+			padding: 80px 0;
+			width: 88%;
+		}
+	}
+    
+	&-title {
+		letter-spacing: -0.5px;
+		margin-top: 0;
+		line-height: 1.2;
+		margin-bottom: .7em;
+		padding-top: 10vh;
+		@include breakpoint(smobile, max-width) {
+			font-size: 1.4rem;
+		}
+		@include breakpoint(lmobile, max-width) {
+			font-size: 1.5rem;
+		}
+		@include breakpoint(lmobile, min-width) {
+			font-size: 1.5rem;
+		}
+		@include breakpoint(tablet, min-width) {
+			font-size: 27px;
+		}
+		@include breakpoint(desktop, min-width) {
+		    font-size: 48px;
+		}
+	}
+
+	&-subtitle {
+		margin-top: 0;
+		margin-bottom: 0;
+		@include breakpoint(smobile, max-width) {
+			font-size: 1rem;
+            line-height: 1.4;
+		}
+		@include breakpoint(lmobile, max-width) {
+			// font-size: 1.3rem;
+		}
+		@include breakpoint(tablet, min-width) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		@include breakpoint(desktop, min-width) {
+			font-size: 24px;
+			line-height: 36px;
+			line-height: 1.5;
+		}
+	}
+}
+
+a#work {
+		padding-top: 40px;
+		margin-top: 20px;
+	}
+
+.specialties {
+	padding-bottom: 4em;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	color: inherit;
+	@include breakpoint(smobile, max-width) {
+        padding-bottom: 2em;
+	}
+	@include breakpoint(lmobile, max-width) {
+        padding-bottom: 1em;
+	}
+	@include breakpoint(lmobile, min-width) {
+		padding-bottom: 1em;
+	}
+}
+.specialty {
+	transition: transform .3s ease-in-out;
+		&:hover {
+			transform: translateY(-8px);
+			.hover--button {
+				display: block;
+				// opacity: 1;
+				.green & {
+					color: color(green,base);
+				}
+				.blue & {
+					color: color(blue,base);
+				}
+				.orange & {
+					color: color(orange,base);
+				}
+			}
+		}
+		.hover--button {
+			// display: none;
+			// opacity: 0;
+			position: absolute;
+			transition: all .3s ease-in-out;
+			color: #999;
+			&:before {
+				content: '—';
+				padding-right: 5px;
+			}
+		}
+    
+	h2 {
+        font-size: 1.5em;
+        margin-bottom: .5em;
+		margin-top: 0;
+    }
+	color: inherit;
+	@include breakpoint(lmobile, max-width) {
+        padding-bottom: 3.5em;
+	}
+	@include breakpoint(lmobile, min-width) {
+		padding-bottom: 3.5em;
+	}
+	@include breakpoint(tablet, min-width) {
+		padding-bottom: 3em;
+	}
+	&:not(:last-child) {
+		padding-right: 12%;
+	}
+}
+
+// Portfolio Grid
+
+.portfolio-grid {
+	padding: 0;
+	margin-bottom: 60px;
+	overflow: hidden;
+	li {
+		list-style: none;
+		display: inline-block;
+		float: left;
+		// margin-bottom: 40px;
+	}
+	&--block {
+		width: 100%;
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: 10vh;
+		}
+		a {
+			line-height: 0;
+			display: block;
+		}
+	}
+	&--block div {
+		@include breakpoint(tablet, min-width) {
+			// position: absolute;
+			// bottom: 0;
+			// right: 0;
+			// background-color: rgba(255,255,255,.85);
+			padding: 10px 20px 20px 30px;
+			width: 100%;
+		}
+		display: block;
+		padding: 15px 20px 40px;
+		.green & {
+			background-color: color(green,base);
+		}
+		.blue & {
+			background-color: color(blue,base);
+		}
+		.orange & {
+			background-color: color(orange,base);
+		}
+	}
+	// &--block picture,
+	// &--block-full picture,
+	&--block img,
+	&--block-full img {
+		transition: opacity 300ms ease-out;
+		&:hover {
+			@include breakpoint(tablet, min-width) {
+	    		opacity: .25;
+		    }	
+		}
+	}
+	&--block-full {
+		width: 100%;
+	}
+	&--details-company {
+		font-size: .7rem;
+		line-height: 1.4;
+	    margin: 0;
+		// color: lighten(#4a4a4a, 20%);
+		color: rgba(255, 255, 255, 0.8);
+	    text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		// display: none;
+		// visibility: none;
+	}
+	&--details-description {
+		font-size: 1.2rem;
+		margin-top: .75rem;
+		line-height: 1.15em;
+		letter-spacing: 0;
+		@include breakpoint(desktop, min-width) {
+			// margin-top: 2rem;
+		    font-size: 1.5rem;
+			margin-bottom: .5em;
+		}
+		color: color(text, white);
+        text-transform: capitalize;
+	}
+}
+
+// Specialties Effects
+// .specialty {
+// 	color: inherit;
+// 	&:hover {
+// 		box-shadow: 1px 2px 6px rgba(0,0,0, .3);
+// 	}
+// }
