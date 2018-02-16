@@ -1,18 +1,18 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var plumber = require('gulp-plumber');
-var notify = require('gulp-notify');
-var del = require('del');
-var sourcemaps = require('gulp-sourcemaps');
+var gulp           = require('gulp');
+var sass           = require('gulp-sass');
+var browserSync    = require('browser-sync');
+var useref         = require('gulp-useref');
+var uglify         = require('gulp-uglify');
+var gulpIf         = require('gulp-if');
+var cssnano        = require('gulp-cssnano');
+var plumber        = require('gulp-plumber');
+var notify         = require('gulp-notify');
+var del            = require('del');
+var sourcemaps     = require('gulp-sourcemaps');
 var nunjucksRender = require('gulp-nunjucks-render');
-var uncss = require('gulp-uncss');
-var imagemin = require('gulp-imagemin');
-var runSequence = require('run-sequence');
+var uncss          = require('gulp-uncss');
+var imagemin       = require('gulp-imagemin');
+var runSequence    = require('run-sequence');
 
 // Start browserSync server
 gulp.task('browserSync', function() {
@@ -120,9 +120,5 @@ gulp.task('clean:dist', function() {
 });
 
 gulp.task('build', function(callback) {
-	runSequence(
-		'clean:dist', 
-		['nunjucks','sass','useref', 'fonts'],
-		callback
-	)
+	runSequence('clean:dist', ['nunjucks','sass','useref','fonts'], callback)
 });
